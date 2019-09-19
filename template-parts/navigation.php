@@ -4,6 +4,7 @@
         <span>&nbsp;</span>
     </label><!-- .navigation__toggle -->
     <nav class="navigation__content">
+        <?php //$pages = count(get_pages(array('parent' => 0))); print($pages); ?>
         <div class="navigation__group">
             <form class="navigation__search-form" role="search" method="get" action="http://ramonk.local/">
                 <label class="screen-reader-text title-medium" for="s"><?php _e('Search', 'zenwriter'); ?>:</label>
@@ -13,15 +14,31 @@
                 </button><!-- .button -->
             </form><!-- .navigation__search-form -->
         </div><!-- .navigation__group -->
+        <?php if (has_nav_menu('main-menu')) : ?>
+        <?php 
+            $locations = get_nav_menu_locations();
+            $menu_id = $locations['main-menu'] ;
+            $pages = wp_get_nav_menu_items($menu_id);
+            foreach ($pages as $page) {
+                if ($page->post_parent === 0) {
+                    $topLevelPages[] = $page;
+                    //echo $page->title . '<br/>';
+                }
+            }
+            //echo count($topLevelPages);
+        ?>
         <div class="navigation__group">
             <?php
-            wp_nav_menu(array(
+            $menu = wp_nav_menu(array(
                 'theme_location' => 'main-menu',
                 'container' => 'nav',
-                'container_class' => 'navigation__pages'
+                'container_class' => 'navigation__pages',
+                'echo' => false
             ));
+            if ($menu) echo $menu;
             ?>
         </div><!-- .navigation__group -->
+        <?php endif; ?>
         <?php
         $hasSocialLinks = false;
         foreach (social_links() as $name => $key) {

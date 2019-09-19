@@ -12,6 +12,7 @@
     height: 100vh;
     right: 0;
     opacity: 0;
+    padding: calc(#{$space-medium} + #{$space-small}) 0;
     position: fixed;
     transition-delay: 0;
     transition-duration: $speed-fast;
@@ -25,12 +26,13 @@
   &__checkbox:checked~&__content {
     opacity: 1;
     width: 85%;
-    padding: calc(#{$space-medium} + #{$space-small}) $space-medium 0;
+    padding-left: $space-medium;
+    padding-right: $space-medium;
     
     @include respond-to('small') {
       padding-left: calc(#{$space-medium} + #{$space-small});
       padding-right: calc(#{$space-medium} + #{$space-small});
-      width: 45%;
+      width: 70%;
     }
 
     @include respond-to('large') {
@@ -73,44 +75,118 @@
   &__pages {
     text-overflow: clip;
     white-space: nowrap;
-    width: 0;
     z-index: 2000;
-
+    
     ul {
       list-style: none;
       padding: 0;
+      width: 100%;
 
       li {
+        display: block;
+
         a {
           border-color: transparent;
-          display: inline-block;
           font-size: 1.5em;
           font-family: $font-family-interaction;
           font-weight: $font-weight-title;
           line-height: $font-height-copy;
-
+          position: relative;
+    
           &:link,
           &:visited,
           &:active,
           &:hover {
             text-decoration: none;
           }
-
-          &:active {
+    
+          &:active,
+          &:hover {
             border-color: $color-brand-primary;
-            opacity: .5;
           }
           
           @include respond-to('small') {
             font-size: 1.6em;
           }
+        }
 
-          @include respond-to('medium') {
-            &:hover {
-              border-color: $color-brand-primary;
+        ul {
+          background-color: $color-background-max;
+          border-left: $width-x-small solid $color-background-3;
+          box-shadow: $shadow-large;
+          display: flex;
+          flex-direction: column;
+          height: 100vh;
+          justify-content: center;
+          position: fixed;
+          right: 0;
+          top: 0;
+          transition-duration: $speed-fast;
+          width: 0;
+          z-index: 2000;
+
+          li a {
+            font-size: 1.2em;
+          }
+        }
+
+        &:hover > ul {
+          padding-left: $space-medium;
+          width: calc(0.8 * 85%);
+          
+          @include respond-to('small') {
+            width: calc(0.8 * 70%);
+          }
+          
+          @include respond-to('large') {
+            width: calc(0.8 * (
+              100vw                                         /* viewport width */
+              - ((100vw - 76.8rem) / 2) - 76.8rem           /* minus grid left margin and grid itself */
+              + #{$space-small}                             /* plus the grid gutter */
+              + (#{$space-medium} + #{$space-small}) / 2    /* plus the width of toggle; */
+              + #{$space-medium} + #{$space-small}          /* pluss the padding of the navigation content */
+              ));
+            }
+            
+          li {
+            &:hover > ul {
+              padding-left: $space-medium;
+              width: calc(0.8 *0.8 * 85%);
+          
+              @include respond-to('small') {
+                width: calc(0.8 * 0.8 * 70%);
+              }
+          
+              @include respond-to('large') {
+                width: calc(0.8 * 0.8 * (
+                  100vw                                         /* viewport width */
+                  - ((100vw - 76.8rem) / 2) - 76.8rem           /* minus grid left margin and grid itself */
+                  + #{$space-small}                             /* plus the grid gutter */
+                  + (#{$space-medium} + #{$space-small}) / 2    /* plus the width of toggle; */
+                  + #{$space-medium} + #{$space-small}          /* pluss the padding of the navigation content */
+                ));
+              }
             }
           }
         }
+      }
+
+      .menu-item-has-children > a::after {
+        align-items: center;
+        background-color: $color-background-1;
+        border-radius: 999px;
+        content: "\62";
+        color: $color-foreground-2;
+        display: inline-flex;
+        flex-direction: column;
+        font-family: zenwriter;
+        font-size: $font-size-copy;
+        height: calc((#{$space-medium}) / 2);
+        justify-content: center;
+        position: absolute;
+        top: .5em;
+        right: calc(-1 * #{$space-medium});
+        width: calc((#{$space-medium}) / 2);
       }
     }
   }

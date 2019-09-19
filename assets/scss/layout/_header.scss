@@ -10,6 +10,7 @@
   position: fixed;
   transition-property: opacity;
   transition-duration: $speed-x-fast;
+  right: 0;
   top: 0;
   width: 100%;
   z-index: 1000;
@@ -58,9 +59,5 @@
     &--long {
       font-size: calc((#{$space-medium} + #{$space-small}) / 4);
     }
-  }
-  
-  .menu {
-    max-width: 50%;
   }
 }
