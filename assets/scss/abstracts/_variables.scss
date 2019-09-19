@@ -1,0 +1,99 @@
+/* ========================================================================== */
+/* VARIABLES
+/* This file contains all application-wide Sass variables.
+/* ========================================================================== */
+
+$theme-url: "http://ramonk.local/wp-content/zenwriter/";
+$dark-mode: false;
+
+/* -------------------------------------------------------------------------- */
+/* Responsive
+/* -------------------------------------------------------------------------- */
+$breakpoints: (
+  "small": (
+    min-width: 768px
+  ),
+  "medium": (
+    min-width: 1025px
+  ),
+  "large": (
+    min-width: 1367px
+  )
+);
+
+/* -------------------------------------------------------------------------- */
+/* Animations
+/* -------------------------------------------------------------------------- */
+$speed-x-fast:  .2s;
+$speed-fast:    .4s;
+$speed-medium:  .6s;
+$speed-slow:    .9s;
+$speed-x-slow:  1.8s;
+
+/* -------------------------------------------------------------------------- */
+/* Layout and grid
+/* -------------------------------------------------------------------------- */
+$scale-x-small: .675;
+$scale-small: .9;
+$scale-large: 1.125;
+$scale-x-large: 1.4;
+
+$space-x-small: 1rem;
+$space-small:   2rem;
+$space-medium:  4rem;
+$space-large:   8rem;
+$space-x-large: 10rem;
+
+$width-x-small: .1rem;
+$width-small:   .2rem;
+$width-medium:  .4rem;
+$width-large:   .8rem;
+$width-x-large: 1.6rem;
+
+/* -------------------------------------------------------------------------- */
+/* Colors and shadows
+/* -------------------------------------------------------------------------- */
+$color-brand-primary: rgb(250, 200, 20);
+$color-brand-darken: darken($color-brand-primary, 7.5%);
+$color-brand-lighten: lighten($color-brand-primary, 10%);
+
+$color-foreground-max: #000;
+$color-foreground-1: rgb(0, 0, 0);
+$color-foreground-2: lighten($color-foreground-1, 20%);
+$color-foreground-3: lighten($color-foreground-1, 40%);
+$color-background-max: #fff;
+$color-background-1: #f5f5f5;
+$color-background-2: darken($color-background-1, 5%);
+$color-background-3: darken($color-background-1, 10%);
+
+@if $dark-mode {
+  $color-foreground-max: invert($color-foreground-max);
+  $color-foreground-1: invert($color-foreground-1);
+  $color-foreground-2: invert($color-foreground-2);
+  $color-foreground-3: invert($color-foreground-3);
+  $color-background-max: invert($color-background-max);
+  $color-background-1: invert($color-background-1);
+  $color-background-2: lighten(invert($color-background-2), 20%);
+  $color-background-3: lighten(invert($color-background-3), 30%);
+}
+
+$shadow-x-small: 0px 0px $space-x-small 0px transparentize($color-foreground-3, .8);
+$shadow-small: 0px 0px $space-small 0px transparentize($color-foreground-3, .8);
+$shadow-medium: 0px 0px $space-medium 0px transparentize($color-foreground-3, .8);
+$shadow-large: 0px 0px $space-large 0px transparentize($color-foreground-3, .8);
+$shadow-x-large: 0px 0px $space-x-large 0px transparentize($color-foreground-3, .8);
+
+/* -------------------------------------------------------------------------- */
+/* Fonts and Typography
+/* -------------------------------------------------------------------------- */
+/* Title */
+$font-family-title:       "IBM Plex Sans", sans-serif;
+$font-height-title:       1.2;
+$font-weight-title:       700;
+/* Copy */
+$font-family-copy:        "IBM Plex Serif", serif;
+$font-height-copy:        1.6;
+$font-size-copy:          1.6rem;
+$font-weight-copy:        400;
+/* Interaction */
+$font-family-interaction: "IBM Plex Sans", sans-serif;

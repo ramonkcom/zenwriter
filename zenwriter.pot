@@ -1,0 +1,274 @@
+# Copyright (C) 2019 Ramon K.
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zenwriter\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2019-09-18T22:24:25+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.3.0\n"
+"X-Domain: zenwriter\n"
+
+#. Theme Name of the theme
+msgid "Zenwriter"
+msgstr ""
+
+#. Theme URI of the theme
+msgid "https://zenwriter.ramonk.com/"
+msgstr ""
+
+#. Description of the theme
+msgid "A minimalist and functional approach to content displaying for perfect reading experience."
+msgstr ""
+
+#. Author of the theme
+msgid "Ramon K."
+msgstr ""
+
+#. Author URI of the theme
+msgid "https://ramonk.com/"
+msgstr ""
+
+#: 404.php:5
+msgid "Page not found"
+msgstr ""
+
+#: archive.php:6
+msgid "Posts in category"
+msgstr ""
+
+#: archive.php:14
+msgid "Posts tagged"
+msgstr ""
+
+#: archive.php:22
+msgid "Posts by"
+msgstr ""
+
+#: archive.php:30
+msgid "Posted on"
+msgstr ""
+
+#: archive.php:43
+msgid "See posts"
+msgstr ""
+
+#: front-page.php:24
+msgid "Latest posts:"
+msgstr ""
+
+#: front-page.php:37
+msgid "You can see all posts in"
+msgstr ""
+
+#: front-page.php:41
+msgid "No post found."
+msgstr ""
+
+#: inc/admin.php:14
+msgid "Social networks"
+msgstr ""
+
+#: inc/admin.php:23
+msgid "Please enter your $s profile URL."
+msgstr ""
+
+#: inc/frontend.php:90
+msgid "Previous page"
+msgstr ""
+
+#: inc/frontend.php:115
+msgid "Next page"
+msgstr ""
+
+#: inc/wordpress.php:13
+msgid "Main Menu"
+msgstr ""
+
+#: inc/wordpress.php:45
+msgid "Google settings"
+msgstr ""
+
+#: inc/wordpress.php:46
+msgid "Google Analytics and Google Search Console settings."
+msgstr ""
+
+#: inc/wordpress.php:64
+msgid "Google Analytics ID"
+msgstr ""
+
+#: inc/wordpress.php:65
+msgid "The Google Analytics ID is a alphanumerical string like \"UA-123456789-0\" (the number of characters may vary)."
+msgstr ""
+
+#: inc/wordpress.php:87
+msgid "Google Search Console meta tag"
+msgstr ""
+
+#: inc/wordpress.php:88
+msgid "The Google Search Console meta tag is a alphanumerical string like \"aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR\" (the number of characters may vary)."
+msgstr ""
+
+#: inc/wordpress.php:103
+msgid "Social networks links"
+msgstr ""
+
+#: inc/wordpress.php:104
+msgid "Social networks profiles."
+msgstr ""
+
+#: inc/wordpress.php:124
+msgid "The full URL for your %s profile, not just the username."
+msgstr ""
+
+#: inc/wordpress.php:150
+msgid "Positive logo"
+msgstr ""
+
+#: inc/wordpress.php:151
+msgid "Select the logo image to be used in the light backgrounds."
+msgstr ""
+
+#: inc/wordpress.php:173
+msgid "Negative logo"
+msgstr ""
+
+#: inc/wordpress.php:174
+msgid "Select the logo image to be used in the dark backgrounds."
+msgstr ""
+
+#: inc/wordpress.php:199
+msgid "Brand color"
+msgstr ""
+
+#: inc/wordpress.php:200
+msgid "Select the brand color to be applied on theme interactive items."
+msgstr ""
+
+#: inc/wordpress.php:211
+msgid "\"Simplicity is the final achievement.\" - Frederic Chopin"
+msgstr ""
+
+#: inc/wordpress.php:222
+msgid "Footer copy"
+msgstr ""
+
+#: inc/wordpress.php:223
+msgid "The text that is displayed in the footer."
+msgstr ""
+
+#: search.php:5
+msgid "Search results for"
+msgstr ""
+
+#: search.php:11
+msgid "One post matching your search term was found. You can browse it below or search again using the menu."
+msgid_plural "A total of %d posts matching your search term were found. You can browse them below or search again using the menu."
+msgstr[0] ""
+msgstr[1] ""
+
+#: search.php:21
+msgid "No posts were found for your search term"
+msgstr ""
+
+#: search.php:21
+msgid "How about trying again?"
+msgstr ""
+
+#: search.php:23
+#: template-parts/navigation.php:10
+msgid "Your search term"
+msgstr ""
+
+#: search.php:24
+#: search.php:25
+#: template-parts/navigation.php:9
+#: template-parts/navigation.php:11
+#: template-parts/navigation.php:12
+msgid "Search"
+msgstr ""
+
+#: search.php:34
+msgid "See post"
+msgid_plural "See posts"
+msgstr[0] ""
+msgstr[1] ""
+
+#: template-parts/navigation.php:37
+msgid "Follow"
+msgstr ""
+
+#: template-parts/post-format-image.php:8
+#: template-parts/post-format-image.php:27
+msgid "Featured image not found."
+msgstr ""
+
+#: template-parts/post-format-link.php:13
+#: template-parts/post-format-link.php:14
+#: template-parts/post-format-link.php:30
+#: template-parts/post-format-link.php:32
+msgid "Browse link"
+msgstr ""
+
+#: template-parts/post-format-quote.php:26
+#: template-parts/post-format-quote.php:55
+msgid "Source"
+msgstr ""
+
+#: template-parts/post-format-standard.php:23
+#: template-parts/post-format-standard.php:24
+msgid "Read the full post"
+msgstr ""
+
+#: template-parts/post-listing.php:9
+msgid "No posts were found for your criteria."
+msgstr ""
+
+#: template-parts/post-meta.php:9
+#: template-parts/post-meta.php:17
+msgid "Category"
+msgstr ""
+
+#: template-parts/post-meta.php:25
+msgid "Posted by"
+msgstr ""
+
+#: template-parts/post-meta.php:29
+msgid "on day"
+msgstr ""
+
+#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
+#: template-parts/post-meta.php:34
+msgid "m/d/Y"
+msgstr ""
+
+#: template-parts/post-meta.php:39
+msgid "in"
+msgstr ""
+
+#: template-parts/post-navigation.php:11
+msgid "Newer:"
+msgstr ""
+
+#: template-parts/post-navigation.php:17
+#: template-parts/post-navigation.php:30
+msgid "Browse"
+msgstr ""
+
+#: template-parts/post-navigation.php:24
+msgid "Older:"
+msgstr ""
+
+#: template-parts/post-tags.php:6
+#: template-parts/post-tags.php:10
+msgid "Tags:"
+msgstr ""
+
+#: template-parts/post-tags.php:24
+msgid "No tags."
+msgstr ""

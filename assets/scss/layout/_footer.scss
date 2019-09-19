@@ -1,0 +1,26 @@
+/* ========================================================================== */
+/* FOOTER
+/* ========================================================================== */
+
+.footer {
+  background-color: black;
+  color: transparentize(white, .5);
+
+  &__content {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    font-family: $font-family-interaction;
+    font-size: calc(#{$font-size-copy} * #{$scale-small});
+    height: calc(#{$space-medium} + #{$space-small});
+    justify-content: space-between;
+    
+    @include respond-to('small') {
+      font-size: $font-size-copy;
+    }
+  }
+
+  &__zenwriter {
+    font-weight: $font-weight-title;
+  }
+}

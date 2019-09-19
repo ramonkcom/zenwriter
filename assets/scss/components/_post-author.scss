@@ -1,0 +1,60 @@
+/* ========================================================================== */
+/* AUTHOR
+/* ========================================================================== */
+
+.post-author {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  font-size: $font-size-copy;
+  justify-content: flex-start;
+
+  &__about {
+    width: calc(100% - 8rem - #{$space-small});
+    padding-left: $space-small;
+
+    @include respond-to('small') {
+      width: calc(100% - 12rem - #{$space-small});
+    }
+  }
+
+  &__avatar {
+    background-size: cover;
+    background-position: center center;
+    border-radius: 100px;
+    height: 8rem;
+    width: 8rem;
+
+    img {
+      display: none;
+    }
+
+    @include respond-to('small') {
+      height: 12rem;
+      width: 12rem;
+    }
+  }
+
+  &__description {
+    font-family: $font-family-interaction;
+    font-size: calc(#{$font-size-copy} * #{$scale-small});
+
+    @include respond-to('small') {
+      font-size: $font-size-copy;
+    }
+  }
+
+  &__links {
+    margin-top: $space-x-small;
+  }
+
+  &__name {
+    font-size: $font-size-copy;
+    line-height: 1;
+    margin-bottom: $space-x-small;
+
+    @include respond-to('small') {
+      font-size: calc(#{$font-size-copy} * #{$scale-large});
+    }
+  }
+}

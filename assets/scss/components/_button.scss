@@ -1,0 +1,88 @@
+/* ========================================================================== */
+/* BUTTONS
+/* ========================================================================== */
+
+.button {
+  background-color: $color-background-2;
+  border: 0;
+  border-radius: 100px;
+  color: $color-foreground-3;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $font-family-interaction;
+  font-weight: $font-weight-title;
+  line-height: $font-size-copy;
+  padding: .3em 1.2em;
+  transition-duration: $speed-fast;
+
+  &:link,
+  &:visited,
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
+
+  &:active {
+    background-color: $color-brand-primary;
+    color: $color-foreground-max;
+  }
+  
+  &--icon {
+    align-items: center;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 2em;
+    line-height: 1;
+    padding: 0;
+    width: 2em;
+  }
+
+  &--important {
+    background-color: $color-brand-primary;
+    color: $color-foreground-1;
+
+    &:active {
+      background-color: $color-brand-darken;
+      color: $color-foreground-max;
+    }
+
+    @include respond-to('medium') {
+      &.button:hover {
+        background-color: $color-brand-lighten;
+        color: $color-foreground-max;
+      }
+    }
+  }
+
+  &--justified {
+    text-align: center;
+    width: 100%;
+  }
+
+  &--small {
+    font-size: #{$scale-small}em;
+    padding: calc(.3em * #{$scale-small}) calc(1.2em * #{$scale-small});
+  }
+
+  &--large {
+    font-size: #{$scale-large}em;
+    padding: calc(.3em * #{$scale-large}) calc(1.2em * #{$scale-large});
+  }
+
+  &--darker {
+    background-color: $color-background-3;
+    color: $color-foreground-2;
+  }
+
+  @include respond-to("small") {
+    line-height: calc(#{$font-height-copy}  * #{$scale-large});
+  }
+
+  @include respond-to('medium') {
+    &:hover {
+      background-color: $color-brand-primary;
+      color: $color-foreground-max;
+    }
+  }
+}

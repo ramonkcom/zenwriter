@@ -1,0 +1,300 @@
+# Copyright (C) 2019 Ramon K.
+# This file is distributed under the GNU General Public License v3 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zenwriter\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
+"POT-Creation-Date: 2019-09-18T22:24:25+00:00\n"
+"PO-Revision-Date: 2019-09-18 19:24-0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2.3\n"
+"X-Domain: zenwriter\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#. Theme Name of the theme
+msgid "Zenwriter"
+msgstr "Zenwriter"
+
+#. Theme URI of the theme
+msgid "https://zenwriter.ramonk.com/"
+msgstr "https://zenwriter.ramonk.com/"
+
+#. Description of the theme
+msgid ""
+"A minimalist and functional approach to content displaying for perfect "
+"reading experience."
+msgstr ""
+"Uma abordagem minimalista e funcional de mostrar conteúdo para uma "
+"experiência perfeita de leitura."
+
+#. Author of the theme
+msgid "Ramon K."
+msgstr "Ramon K."
+
+#. Author URI of the theme
+msgid "https://ramonk.com/"
+msgstr "https://ramonk.com/"
+
+#: 404.php:5
+msgid "Page not found"
+msgstr "Página não encontrada"
+
+#: archive.php:6
+msgid "Posts in category"
+msgstr "Postagens na categoria"
+
+#: archive.php:14
+msgid "Posts tagged"
+msgstr "Postagens marcadas com a palavra-chave"
+
+#: archive.php:22
+msgid "Posts by"
+msgstr "Postagens por"
+
+#: archive.php:30
+msgid "Posted on"
+msgstr "Postado em"
+
+#: archive.php:43
+msgid "See posts"
+msgstr "Veja as postagens"
+
+#: front-page.php:24
+msgid "Latest posts:"
+msgstr "Últimas postagens:"
+
+#: front-page.php:37
+msgid "You can see all posts in"
+msgstr "Você pode ver todas as postagens em"
+
+#: front-page.php:41
+msgid "No post found."
+msgstr "Nenhuma postagem encontrada."
+
+#: inc/admin.php:14
+msgid "Social networks"
+msgstr "Redes sociais"
+
+#: inc/admin.php:23
+msgid "Please enter your $s profile URL."
+msgstr "Por favor, digite a URL do seu perfil do $s."
+
+#: inc/frontend.php:90
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: inc/frontend.php:115
+msgid "Next page"
+msgstr "Próxima página"
+
+#: inc/wordpress.php:13
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: inc/wordpress.php:45
+msgid "Google settings"
+msgstr "Configurações do Google"
+
+#: inc/wordpress.php:46
+msgid "Google Analytics and Google Search Console settings."
+msgstr "Configurações do Google Analytics e do Google Search Console."
+
+#: inc/wordpress.php:64
+msgid "Google Analytics ID"
+msgstr "ID do Google Analytics"
+
+#: inc/wordpress.php:65
+msgid ""
+"The Google Analytics ID is a alphanumerical string like "
+"\"UA-123456789-0\" (the number of characters may vary)."
+msgstr ""
+"O ID do Google Analytics é uma sequência alfanumérica como "
+"“UA-123456789-0” (o número de caracteres pode variar)."
+
+#: inc/wordpress.php:87
+msgid "Google Search Console meta tag"
+msgstr "Meta tag do Google Search Console"
+
+#: inc/wordpress.php:88
+msgid ""
+"The Google Search Console meta tag is a alphanumerical string like "
+"\"aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR\" (the number of characters may "
+"vary)."
+msgstr ""
+"A meta tag do Google Search Console é uma sequência alfanumérica como "
+"“aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR” (o número de caracteres pode "
+"variar)."
+
+#: inc/wordpress.php:103
+msgid "Social networks links"
+msgstr "Links de redes sociais"
+
+#: inc/wordpress.php:104
+msgid "Social networks profiles."
+msgstr "Perfis de redes sociais."
+
+#: inc/wordpress.php:124
+msgid "The full URL for your %s profile, not just the username."
+msgstr "A URL completa para o seu perfil no %s, não apenas o nome de usuário."
+
+#: inc/wordpress.php:150
+msgid "Positive logo"
+msgstr "Logo positivo"
+
+#: inc/wordpress.php:151
+msgid "Select the logo image to be used in the light backgrounds."
+msgstr "Selecione a imagem do logo a ser usada em fundos claros."
+
+#: inc/wordpress.php:173
+msgid "Negative logo"
+msgstr "Logo negativo"
+
+#: inc/wordpress.php:174
+msgid "Select the logo image to be used in the dark backgrounds."
+msgstr "Selecione a imagem do logo a ser usada em fundos escuros."
+
+#: inc/wordpress.php:199
+msgid "Brand color"
+msgstr "Cor da marca"
+
+#: inc/wordpress.php:200
+msgid "Select the brand color to be applied on theme interactive items."
+msgstr "Selecione a cor da marca a ser aplicada nos itens interativos do tema."
+
+#: inc/wordpress.php:211
+msgid "\"Simplicity is the final achievement.\" - Frederic Chopin"
+msgstr "“Simplicidade é a conquista final.” - Frederic Chopin"
+
+#: inc/wordpress.php:222
+msgid "Footer copy"
+msgstr "Texto do rodapé"
+
+#: inc/wordpress.php:223
+msgid "The text that is displayed in the footer."
+msgstr "O texto que é mostrado no rodapé."
+
+#: search.php:5
+msgid "Search results for"
+msgstr "Resultados da busca para"
+
+#: search.php:11
+msgid ""
+"One post matching your search term was found. You can browse it below or "
+"search again using the menu."
+msgid_plural ""
+"A total of %d posts matching your search term were found. You can browse "
+"them below or search again using the menu."
+msgstr[0] ""
+"Uma postagem foi encontrada para a sua busca. Você pode vê-la abaixo ou "
+"realizar uma nova busca através do menu."
+msgstr[1] ""
+"Um total de %d postagens foram encontradas para sua busca. Você pode vê-las "
+"abaixo ou realizar uma nova busca através do menu."
+
+#: search.php:21
+msgid "No posts were found for your search term"
+msgstr "Nenhuma postagem foi encontrada para sua busca"
+
+#: search.php:21
+msgid "How about trying again?"
+msgstr "Que tal tentar de novo?"
+
+#: search.php:23 template-parts/navigation.php:10
+msgid "Your search term"
+msgstr "Sua busca"
+
+#: search.php:24 search.php:25 template-parts/navigation.php:9
+#: template-parts/navigation.php:11 template-parts/navigation.php:12
+msgid "Search"
+msgstr "Busca"
+
+#: search.php:34
+msgid "See post"
+msgid_plural "See posts"
+msgstr[0] "Veja a postagem"
+msgstr[1] "Veja as postagens"
+
+#: template-parts/navigation.php:37
+msgid "Follow"
+msgstr "Siga"
+
+#: template-parts/post-format-image.php:8
+#: template-parts/post-format-image.php:27
+msgid "Featured image not found."
+msgstr "Imagem destacada não encontrada."
+
+#: template-parts/post-format-link.php:13
+#: template-parts/post-format-link.php:14
+#: template-parts/post-format-link.php:30
+#: template-parts/post-format-link.php:32
+msgid "Browse link"
+msgstr "Acesse o link"
+
+#: template-parts/post-format-quote.php:26
+#: template-parts/post-format-quote.php:55
+msgid "Source"
+msgstr "Fonte"
+
+#: template-parts/post-format-standard.php:23
+#: template-parts/post-format-standard.php:24
+msgid "Read the full post"
+msgstr "Leia a postagem completa"
+
+#: template-parts/post-listing.php:9
+msgid "No posts were found for your criteria."
+msgstr "Nenhuma postagem foi encontrada para o seu critério."
+
+#: template-parts/post-meta.php:9 template-parts/post-meta.php:17
+msgid "Category"
+msgstr "Categoria"
+
+#: template-parts/post-meta.php:25
+msgid "Posted by"
+msgstr "Postado por"
+
+#: template-parts/post-meta.php:29
+msgid "on day"
+msgstr "no dia"
+
+#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
+#: template-parts/post-meta.php:34
+msgid "m/d/Y"
+msgstr "j \\d\\e F \\d\\e Y"
+
+#: template-parts/post-meta.php:39
+msgid "in"
+msgstr "em"
+
+#: template-parts/post-navigation.php:11
+msgid "Newer:"
+msgstr "Mais recente:"
+
+#: template-parts/post-navigation.php:17 template-parts/post-navigation.php:30
+msgid "Browse"
+msgstr "Acesse"
+
+#: template-parts/post-navigation.php:24
+msgid "Older:"
+msgstr "Mais antigo:"
+
+#: template-parts/post-tags.php:6 template-parts/post-tags.php:10
+msgid "Tags:"
+msgstr "Palavras-chave:"
+
+#: template-parts/post-tags.php:24
+msgid "No tags."
+msgstr "Sem palavras-chave."
+
+#~ msgid "Posts containing the keyword"
+#~ msgstr "Postagens contendo a palavra-chave"
+
+#~ msgid "Posts written by"
+#~ msgstr "Postagens escritas por"
+
+#~ msgid "Social links"
+#~ msgstr "Links de redes sociais"

@@ -1,0 +1,48 @@
+/* ========================================================================== */
+/* POST NAVIGATION
+/* ========================================================================== */
+
+.post-navigation {
+  background-color: $color-background-2;
+  border: $width-x-small solid $color-background-3;
+  border-left: 0;
+  border-right: 0;
+
+  &__item {
+    // border-left: $width-x-small solid $color-background-3;
+    // padding: calc((#{$space-medium} + #{$space-small}) / 4);
+    width: calc(50% - #{$space-small/2});
+    
+    &--empty {
+      visibility: hidden;
+    }
+
+    &:last-child {
+      text-align: right;
+    }
+    
+    &-label {
+      font-family: $font-family-interaction;
+      font-size: calc(#{$font-size-copy} * #{$scale-small});
+      font-weight: $font-weight-copy;
+      margin-bottom: $space-x-small;
+      
+      @include respond-to('small') {
+        font-size: $font-size-copy;
+      }
+    }
+
+    &-title {
+      font-family: $font-family-title;
+      font-weight: $font-weight-title;
+      margin-bottom: $space-x-small;
+    }
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: $space-small 0;
+  }
+}

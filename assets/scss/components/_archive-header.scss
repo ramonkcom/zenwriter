@@ -1,0 +1,53 @@
+/* ========================================================================== */
+/* ARCHIVE HEADER
+/* ========================================================================== */
+
+.archive-header {
+  background-color: $color-background-max;
+  border-bottom: $width-x-small solid $color-background-3;
+  padding: calc(#{$space-medium} * 2) 0;
+
+  @include respond-to('small') {
+    padding: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+  }
+
+  .button {
+    margin-top: calc(#{$font-size-copy} * #{$scale-large});
+
+    @include respond-to('small') {
+      margin-top: calc(#{$font-size-copy} * #{$scale-large} * #{$scale-large});
+    }
+  }
+
+  &__description {
+    font-size: calc(#{$font-size-copy} * #{$scale-large});
+  }
+
+  &__search-form {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    margin-top: calc(#{$font-size-copy} * #{$scale-large});
+    justify-content: stretch;
+
+    @include respond-to('small') {
+      margin-top: calc(#{$font-size-copy} * #{$scale-large} * #{$scale-large});
+    }
+
+    .button {
+      flex-grow: 1;
+      margin-top: 0;
+      margin-left: 1em;
+    }
+
+    .search-field {
+      flex-grow: 3;
+    }
+  }
+
+  &__title {
+    &--author {
+      padding-bottom: .15em;
+    }
+  }
+}

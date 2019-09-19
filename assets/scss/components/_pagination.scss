@@ -1,0 +1,40 @@
+/* ========================================================================== */
+/* PAGINATION
+/* ========================================================================== */
+
+.pagination {
+  background-color: $color-background-2;
+  border: $width-x-small solid $color-background-3;
+  border-left: 0;
+  border-right: 0;
+
+  &__item {
+    display: none;
+    font-family: $font-family-interaction;
+
+    &:first-child,
+    &:last-child {
+      display: inline-block;
+    }
+
+    &--active {
+      a {
+        border-color: $color-brand-lighten;
+      }
+    }
+
+    @include respond-to('small') {
+      display: inline-block;
+    }
+  }
+
+  &__items {
+    align-items: center;
+    border: $width-small solid $color-background-2;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+    padding: calc((#{$space-medium} + #{$space-small}) / 4) 0;
+  }
+}

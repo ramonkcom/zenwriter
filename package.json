@@ -1,0 +1,15 @@
+{
+  "name": "zenwriter",
+  "version": "1.0.0",
+  "description": "Zenwriter wordpress theme.",
+  "main": "index.js",
+  "scripts": {
+    "compile:scss": "node-sass assets/scss/main.scss style.css --output-style -w",
+    "compile:scss-min": "node-sass assets/scss/main.scss style.css --output-style compressed -w"
+  },
+  "author": "Ramon K.",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

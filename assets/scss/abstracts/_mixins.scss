@@ -1,0 +1,30 @@
+/* ========================================================================== */
+/* MIXINS
+/* This file contains all application-wide Sass mixins.
+/* ========================================================================== */
+
+/* -------------------------------------------------------------------------- */
+/* Mixin for media queries
+/* -------------------------------------------------------------------------- */
+@mixin respond-to($name) {
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name) {
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))} {
+      @content;
+    }
+  }
+  // If the key doesn't exist in the map
+  @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoints}`. "
+    +"Please make sure `#{$name}` is defined in `$breakpoints` map.";
+  }
+}
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}

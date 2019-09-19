@@ -1,0 +1,42 @@
+/* ========================================================================== */
+/* HOME
+/* ========================================================================== */
+
+.front-page {
+  .post {
+    &__content {
+      font-size: calc(#{$font-size-copy} * #{$scale-small});
+    }
+
+    @include respond-to ('small') {
+      font-size: $font-size-copy;
+    }
+  }
+
+  .post-meta,
+  .post-tags {
+    font-size: calc(#{$font-size-copy} * #{$scale-small} * #{$scale-small});
+
+    @include respond-to ('small') {
+      font-size: calc(#{$font-size-copy} * #{$scale-small});
+    }
+  }
+
+  .post-tags {
+    &__title {
+      font-size: calc(#{$font-size-copy} * #{$scale-small} * #{$scale-small});
+
+      @include respond-to ('small') {
+        font-size: calc(#{$font-size-copy} * #{$scale-small});
+      }
+    }
+  }
+}
+
+.latest-posts {
+  padding: calc(#{$space-medium} * 2) 0;
+
+  @include respond-to('small') {
+    padding: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+  }
+}

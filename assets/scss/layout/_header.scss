@@ -1,0 +1,55 @@
+/* ========================================================================== */
+/* HEADER
+/* ========================================================================== */
+
+.header {
+  background-color: $color-background-max;
+  border-bottom: $width-x-small solid $color-background-3;
+  box-shadow: $shadow-small;
+  left: 0;
+  position: fixed;
+  transition-property: opacity;
+  transition-duration: $speed-x-fast;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  
+  &.focus {
+    transition-duration: #{5*$speed-x-slow};
+    transition-timing-function: ease-in;
+    opacity: 0;
+  }
+  
+  &__content {
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    height: calc(#{$space-medium} + #{$space-small});
+    padding-bottom: calc((#{$space-medium} + #{$space-small}) / 4);
+    padding-top: calc((#{$space-medium} + #{$space-small}) / 4);
+    position: relative;
+  }
+
+  &__logo {
+    height: calc((#{$space-medium} + #{$space-small}) / 2);
+    width: auto;
+  }
+  
+  &__logo-wrapper {
+    font-size: calc((#{$space-medium} + #{$space-small}) / 2);
+    font-family: $font-family-title;
+    font-weight: $font-weight-title;
+    line-height: 1;
+    margin: 0;
+    max-width: 50%;
+  }
+  
+  &__logo-link {
+    border: 0;
+  }
+
+  .menu {
+    max-width: 50%;
+  }
+}

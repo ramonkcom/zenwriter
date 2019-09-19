@@ -1,0 +1,16 @@
+/* ========================================================================== */
+/* SCROLL TO TOP
+/* ========================================================================== */
+
+.scroll-to-top {
+  bottom: calc((#{$space-medium} + #{$space-small}) / 4);
+  height: calc((#{$space-medium} + #{$space-small}) / 2);
+  opacity: 0;
+  position: fixed;
+  right: calc(((100vw - 76.8rem)/2) + #{$space-small});
+  width: calc((#{$space-medium} + #{$space-small}) / 2);
+
+  &.focus {
+    opacity: 1;
+  }
+}
