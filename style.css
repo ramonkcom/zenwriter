@@ -636,16 +636,13 @@ h6 {
   margin: 0 auto;
   max-width: 76.8rem; }
 
-.admin-bar {
-  padding-top: calc(4rem + 2rem + 46px); }
-  @media (min-width: 783px) {
-    .admin-bar {
-      padding-top: calc(4rem + 2rem + 32px); } }
+@media (max-width: 782px) {
+  .admin-bar #wpadminbar {
+    display: none; } }
+
+@media (min-width: 783px) {
   .admin-bar .header {
-    margin-top: 46px; }
-    @media (min-width: 783px) {
-      .admin-bar .header {
-        margin-top: 32px; } }
+    top: 32px; } }
 
 /* ========================================================================== */
 /* HEADER
