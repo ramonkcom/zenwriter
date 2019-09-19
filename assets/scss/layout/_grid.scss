@@ -7,3 +7,18 @@
   margin: 0 auto;
   max-width: 76.8rem;
 }
+.admin-bar {
+  padding-top: calc(#{$space-medium} + #{$space-small} + 46px);
+  
+  @media(min-width: 783px) {
+    padding-top: calc(#{$space-medium} + #{$space-small} + 32px);
+  }
+  
+  .header {
+    margin-top: 46px;
+    
+    @media(min-width: 783px) {
+      margin-top: 32px;
+    }
+  }
+}
