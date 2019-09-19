@@ -677,15 +677,22 @@ h6 {
   .header__logo {
     height: calc((4rem + 2rem) / 2);
     width: auto; }
-  .header__logo-wrapper {
-    font-size: calc((4rem + 2rem) / 2);
+  .header__brand {
     font-family: "IBM Plex Sans", sans-serif;
+    font-size: 0;
     font-weight: 700;
-    line-height: 1;
     margin: 0;
     max-width: 50%; }
-  .header__logo-link {
-    border: 0; }
+    .header__brand-link {
+      border: none;
+      display: inline-block; }
+  .header__title {
+    display: inline-block;
+    font-size: calc((4rem + 2rem) / 2);
+    height: calc((4rem + 2rem) / 2);
+    line-height: calc((4rem + 2rem) / 2); }
+    .header__title--long {
+      font-size: calc((4rem + 2rem) / 4); }
   .header .menu {
     max-width: 50%; }
 

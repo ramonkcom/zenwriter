@@ -79,15 +79,17 @@ if (!defined('ABSPATH')) {
     <header class="header">
         <div class="header__content grid-container">
             <?php $tag = is_front_page() ? 'h1' : 'div'; ?>
-            <<?php echo $tag ?> class="header__logo-wrapper">
-                <a class="header__logo-link" href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>">
+            <<?php echo $tag ?> class="header__brand">
+                <a class="header__brand-link" href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>">
                     <?php if ($custom_logo_url) : ?>
                         <img class="header__logo" src="<?php echo $custom_logo_url; ?>" alt="<?php bloginfo('name'); ?>" />
                     <?php else : ?>
-                        <?php bloginfo('name'); ?>
+                        <span class="header__title<?php if (strlen(get_bloginfo('name')) > 20) echo ' header__title--long'; ?>">
+                            <?php bloginfo('name'); ?>
+                        </span><!-- .header__title -->
                     <?php endif; ?>
-                </a><!-- .header__logo-link -->
-            </<?php echo $tag ?>><!-- .header__logo-wrapper -->
+                </a><!-- .header__brand-link -->
+            </<?php echo $tag ?>><!-- .header__brand -->
             <?php get_template_part('/template-parts/navigation'); ?>
         </div><!-- .header__content -->
     </header><!-- .header -->

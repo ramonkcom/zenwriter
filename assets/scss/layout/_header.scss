@@ -36,19 +36,30 @@
     width: auto;
   }
   
-  &__logo-wrapper {
-    font-size: calc((#{$space-medium} + #{$space-small}) / 2);
+  &__brand {
     font-family: $font-family-title;
+    font-size: 0;
     font-weight: $font-weight-title;
-    line-height: 1;
     margin: 0;
     max-width: 50%;
+    
+    &-link {
+      border: none;
+      display: inline-block;
+    }
   }
   
-  &__logo-link {
-    border: 0;
-  }
+  &__title {
+    display: inline-block;
+    font-size: calc((#{$space-medium} + #{$space-small}) / 2);
+    height: calc((#{$space-medium} + #{$space-small}) / 2);
+    line-height: calc((#{$space-medium} + #{$space-small}) / 2);
 
+    &--long {
+      font-size: calc((#{$space-medium} + #{$space-small}) / 4);
+    }
+  }
+  
   .menu {
     max-width: 50%;
   }
