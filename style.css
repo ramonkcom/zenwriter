@@ -703,18 +703,37 @@ h6 {
   background-color: black;
   color: rgba(255, 255, 255, 0.5); }
   .footer__content {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     font-family: "IBM Plex Sans", sans-serif;
     font-size: calc(1.6rem * 0.9);
-    height: calc(4rem + 2rem);
-    justify-content: space-between; }
+    padding: 2rem 0; }
     @media (min-width: 768px) {
       .footer__content {
-        font-size: 1.6rem; } }
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        font-size: 1.6rem;
+        height: calc(4rem + 2rem);
+        justify-content: space-between; } }
+  .footer__copy, .footer__zenwriter {
+    display: block; }
+    @media (min-width: 768px) {
+      .footer__copy, .footer__zenwriter {
+        padding: 0 calc(2rem / 2); } }
+  .footer__copy {
+    line-height: 1; }
+    @media (min-width: 768px) {
+      .footer__copy {
+        width: 88%;
+        padding-left: 0; } }
   .footer__zenwriter {
-    font-weight: 700; }
+    font-weight: 700;
+    border: 0; }
+    @media (min-width: 768px) {
+      .footer__zenwriter {
+        line-height: 1;
+        padding-right: 0;
+        text-align: right;
+        width: 12%; } }
 
 /* ========================================================================== */
 /* BUTTONS

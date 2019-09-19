@@ -5,17 +5,12 @@
         <footer class="footer">
             <div class="grid-container">
                 <div class="footer__content">
-                    <?php
-                    $custom_footer_copy = trim(get_theme_mod('zenwriter_setting_footer-copy'));
-                    if ('' != $custom_footer_copy) :
-                    ?>
                     <span class="footer__copy">
-                        <?php echo $custom_footer_copy; ?>
+                        <?php echo trim(get_theme_mod('zenwriter_setting_footer-copy')); ?>
                     </span><!-- .footer__copy -->
-                    <?php endif; ?>
-                    <span class="footer__zenwriter">
-                        <?php bloginfo('name'); ?> on Zenwriter 2019 - <?php echo date('Y'); ?>
-                    </span>
+                    <a class="footer__zenwriter" href="https://zenwriter.ramonk.com/" title="Zenwriter" target="_blank">
+                        Zenwriter
+                    </a><!-- .footer__zenwriter -->
                 </div><!-- .footer__content -->
             </div><!-- .grid-container -->
         </footer><!-- .footer -->

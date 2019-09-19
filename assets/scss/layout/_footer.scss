@@ -7,20 +7,47 @@
   color: transparentize(white, .5);
 
   &__content {
-    align-items: center;
-    display: flex;
-    flex-direction: row;
     font-family: $font-family-interaction;
     font-size: calc(#{$font-size-copy} * #{$scale-small});
-    height: calc(#{$space-medium} + #{$space-small});
-    justify-content: space-between;
+    padding: $space-small 0;
     
     @include respond-to('small') {
+      align-items: center;
+      display: flex;
+      flex-direction: row;
       font-size: $font-size-copy;
+      height: calc(#{$space-medium} + #{$space-small});
+      justify-content: space-between;
     }
   }
 
+  &__copy,
+  &__zenwriter {
+      display: block;
+      
+      @include respond-to('small') {
+        padding: 0 calc(#{$space-small} / 2);
+      }
+    }
+    
+  &__copy {
+    line-height: 1;
+    
+    @include respond-to('small') {
+      width: 88%;
+      padding-left: 0;
+    }
+  }
+  
   &__zenwriter {
     font-weight: $font-weight-title;
+    border: 0;
+    
+    @include respond-to('small') {
+      line-height: 1;
+      padding-right: 0;
+      text-align: right;
+      width: 12%;
+    }
   }
 }

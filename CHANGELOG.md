@@ -7,6 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 - Header styling when the site title is too long
+- Footer contents and styling when copy is too long
 
 ### Fixed
 - Wordpress admin bar overlapping the header
