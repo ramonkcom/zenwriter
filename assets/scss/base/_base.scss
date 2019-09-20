@@ -35,16 +35,10 @@ input[type=submit] {
 
   background-color: $color-background-2;
 
-  &:active {
+  &:active,
+  &:hover {
     background-color: $color-brand-primary;
     color: $color-foreground-max;
-  }
-
-  @include respond-to('medium') {
-    &:hover {
-      background-color: $color-brand-primary;
-      color: $color-foreground-max;
-    }
   }
 }
 
@@ -78,16 +72,10 @@ a {
     text-decoration: none;
   }
 
-  &:active {
+  &:active,
+  &:hover {
     border-color: $color-brand-primary;
     color: $color-foreground-max;
-  }
-
-  @include respond-to('medium') {
-    &:hover {
-      border-color: $color-brand-primary;
-      color: $color-foreground-max;
-    }
   }
 }
 

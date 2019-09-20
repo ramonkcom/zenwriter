@@ -49,41 +49,41 @@ if (!defined('ABSPATH')) {
             .navigation__pages ul li a:active,
             .pagination__item--active a,
             .post__content .is-style-outline .wp-block-button__link:active { 
-                border-color: <?php echo $custom_brand_color; ?>; 
+                border-color: <?php echo $custom_brand_color; ?>;
             }
             mark:hover, 
             button:active,
+            button:hover,
             input[type=button]:active,
+            input[type=button]:hover,
             input[type=reset]:active,
+            input[type=reset]:hover,
             input[type=submit]:active,
+            input[type=submit]:hover,
             .button:active,
+            .button:hover,
             .button--important,
+            .button--important:hover,
+            .navigation__toggle:hover,
             .navigation__checkbox:checked ~ .navigation__toggle,
-            .post__content .wp-block-button__link:active {            
-                background-color: <?php echo $custom_brand_color; ?>; 
+            .post__content .wp-block-button__link:active,
+            .post__content .wp-block-button__link:hover {            
+                background-color: <?php echo $custom_brand_color; ?>;
             }
-            @media (min-width: 1025px) {
-                a:hover,
-                .navigation__pages ul li a:hover,
-                .post__content .is-style-outline .wp-block-button__link:hover { 
-                    border-color: <?php echo $custom_brand_color; ?>; 
-                }
-                button:hover,
-                input[type=button]:hover,
-                input[type=reset]:hover,
-                input[type=submit]:hover,
-                .button:hover,
-                .button--important.button:hover,
-                .navigation__toggle:hover,
-                .post__content .wp-block-button__link:hover { 
-                    background-color: <?php echo $custom_brand_color; ?>; 
-                }
-                .post__content .is-style-outline .wp-block-button__link:hover { 
-                    background-color: transparent;
-                }
-                .button--important.button:hover {
-                    filter: brightness(92.5%);
-                }
+            a:hover,
+            .navigation__pages ul li a:hover,
+            .post__content .is-style-outline .wp-block-button__link:hover { 
+                border-color: <?php echo $custom_brand_color; ?>;
+            }
+            .button--important:hover {
+                filter: brightness(92.5%);
+            }
+            .post__content .is-style-outline .wp-block-button__link:hover { 
+                background-color: transparent;
+            }
+            .footer__zenwriter:hover,
+            .footer__zenwriter:active {
+                color: <?php echo $custom_brand_color; ?>;
             }
         </style>
     <?php endif; ?>

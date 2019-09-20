@@ -7,7 +7,8 @@
 
   background-color: $color-background-2;
 
-  &:active {
+  &:active,
+  &:hover {
     background-color: $color-brand-primary;
     color: $color-foreground-max;
   }
@@ -27,16 +28,10 @@
     background-color: $color-brand-primary;
     color: $color-foreground-1;
 
-    &:active {
+    &:active,
+    &:hover {
       background-color: $color-brand-darken;
       color: $color-foreground-max;
-    }
-
-    @include respond-to('medium') {
-      &.button:hover {
-        background-color: $color-brand-lighten;
-        color: $color-foreground-max;
-      }
     }
   }
 
@@ -64,12 +59,5 @@
   &--darker {
     background-color: $color-background-3;
     color: $color-foreground-2;
-  }
-
-  @include respond-to('medium') {
-    &:hover {
-      background-color: $color-brand-primary;
-      color: $color-foreground-max;
-    }
   }
 }

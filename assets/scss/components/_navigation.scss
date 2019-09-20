@@ -240,19 +240,17 @@
     transition-duration: $speed-fast;
     width: #{($space-medium + $space-small) / 2};
     z-index: 2000;
+
+    &:hover {
+      background-color: $color-brand-primary;
+      color: $color-foreground-max;
+    }
     
-    @include respond-to('medium') {
-      &:hover {
-        background-color: $color-brand-primary;
-        color: $color-foreground-max;
-        
-      }
-      &:hover span {
-        &,
-        &::after,
-        &::before {
-          background-color: $color-foreground-max;
-        }
+    &:hover span {
+      &,
+      &::after,
+      &::before {
+        background-color: $color-foreground-max;
       }
     }
 

@@ -44,10 +44,13 @@
     border: 0;
 
     &:link,
-    &:visited,
+    &:visited {
+      color: inherit;
+    }
+
     &:hover,
     &:active {
-      color: inherit;
+      color: $color-brand-primary;
     }
     
     @include respond-to('small') {
