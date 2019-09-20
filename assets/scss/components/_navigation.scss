@@ -20,7 +20,7 @@
     transition-timing-function: ease;
     top: 0;
     width: 0;
-    z-index: 1000;
+    z-index: 3000;
   }
 
   &__checkbox:checked~&__content {
@@ -75,7 +75,6 @@
   &__pages {
     text-overflow: clip;
     white-space: nowrap;
-    z-index: 2000;
     
     ul {
       list-style: none;
@@ -123,7 +122,7 @@
           top: 0;
           transition-duration: $speed-fast;
           width: 0;
-          z-index: 2000;
+          z-index: 4000;
 
           li a {
             font-size: 1.2em;
@@ -239,7 +238,7 @@
     text-align: center;
     transition-duration: $speed-fast;
     width: #{($space-medium + $space-small) / 2};
-    z-index: 2000;
+    z-index: 3500;
 
     &:hover {
       background-color: $color-brand-primary;
@@ -293,14 +292,14 @@
     color: $color-foreground-max;
     margin-left: calc(-1 * (
       85vw                                            /* navigation content width */
-      - #{$space-medium - $space-small}            /* minus navigation content padding */
+      - #{$space-medium + $space-small}               /* minus navigation content padding */
     ));
     
     @include respond-to('small') {
       margin-left: calc(-1 * (
-        45vw                                            /* navigation content width */
+        70vw                                            /* navigation content width */
         - ((100vw - 76.8rem) / 2) - #{$space-small}     /* minus current position */
-        - #{$space-medium - $space-small}            /* minus navigation content padding */
+        - #{$space-medium + $space-small}               /* minus navigation content padding */
       ));
     }
     

@@ -5,6 +5,8 @@
 .footer {
   background-color: black;
   color: transparentize(white, .5);
+  position: relative;
+  z-index: 1000;
 
   &__content {
     font-family: $font-family-interaction;
