@@ -12,37 +12,26 @@
     url("assets/fonts/zenwriter-icons.svg#zenwriter") format("svg");
   font-weight: normal;
   font-style: normal;
+}
 
+[data-icon]:before,
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  bottom: -.1em;
+  font-family: "zenwriter" !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: normal !important;
+  line-height: 1;
+  position: relative;
+  speak: none;
+  text-transform: none !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 [data-icon]:before {
-  bottom: -.15em;
   content: attr(data-icon);
-  font-family: "zenwriter" !important;
-  font-style: normal !important;
-  font-variant: normal !important;
-  font-weight: normal !important;
-  line-height: 1;
-  position: relative;
-  speak: none;
-  text-transform: none !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-[class^="icon-"]:before,
-[class*=" icon-"]:before {
-  bottom: -.15em;
-  font-family: "zenwriter" !important;
-  font-style: normal !important;
-  font-variant: normal !important;
-  font-weight: normal !important;
-  line-height: 1;
-  position: relative;
-  speak: none;
-  text-transform: none !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-left:before {
