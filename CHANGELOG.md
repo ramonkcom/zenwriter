@@ -14,7 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enso symbol on login page and admin bar
 
 ### Changed
-- Reduced calc() usage 
+- Reduced calc() usage
 - Pure CSS arrow icons
 - Better styling for buttons
 - Better markup for post meta, tags and author
