@@ -3,6 +3,9 @@
 /* This file contains very basic styles.
 /* ========================================================================== */
 
+body, html {
+  height: 100%;
+}
 body {
   background-color: $color-background-1;
   color: $color-foreground-2;

@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Page no longer scrolls when the navigation is open
 - Post author layout
 
+### Fixed
+- Footer now stay sticked to the bottom for any content size
+
 ---
 
 ## [1.1.0] - 2019-09-19

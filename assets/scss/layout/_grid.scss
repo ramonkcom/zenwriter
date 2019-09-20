@@ -2,12 +2,6 @@
 /* GRID
 /* ========================================================================== */
 
-.grid-container {
-  padding: 0 $space-small;
-  margin: 0 auto;
-  max-width: 76.8rem;
-}
-
 .admin-bar {
   @media(max-width: 782px) {
     #wpadminbar {
@@ -20,4 +14,14 @@
       top: 32px;
     }
   }
+}
+
+.grid-container {
+  padding: 0 $space-small;
+  margin: 0 auto;
+  max-width: 76.8rem;
+}
+
+.main {
+  min-height: 100%;
 }
