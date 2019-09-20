@@ -36,16 +36,20 @@
 /* Mixin for buttons
 /* -------------------------------------------------------------------------- */
 @mixin button-shape {
+  align-items: center;
   border: 0;
   border-radius: 999px;
   color: $color-foreground-3;
   cursor: pointer;
-  display: inline-block;
+  display: inline-flex;
+  flex-direction: row;
   font-family: $font-family-interaction;
   font-weight: $font-weight-title;
+  justify-content: center;
   line-height: 1;
   padding: .6em 1.2em;
   transition-duration: $speed-fast;
+
 
   &:link,
   &:visited,
@@ -57,5 +61,14 @@
   [class^="icon-"]:before,
   [class*=" icon-"]:before {
     font-size: 0.8em;
+  }
+
+  .icon {
+    &-down,
+    &-left,
+    &-right,
+    &-up {
+      font-size: inherit;
+    }
   }
 }

@@ -4,10 +4,11 @@
   &-right,
   &-up {
     display: inline-block;
+    height: 1em;
+    line-height: 1;
+    margin: 0 .25em;
     position: relative;
-    margin: 0 auto;
-    height: 0;
-    width: .4em;
+    width: 1em;
   
     &::before,
     &::after {
@@ -15,82 +16,82 @@
       content: "";
       display: inline-block;
       height: $width-small;
-      transition: all;
-      transition-duration: $speed-fast;
       position: absolute;
+    }
+  }
+
+  &-left,
+  &-right {
+    width: .5em;
+
+    &::after,
+    &::before {
+      right: 0;
       width: 100%;
     }
-  
-    &::before {
-      top: -.111em;
-    }
-  
     &::after {
-      top: .111em;
+      bottom: calc(25% + #{$width-small}/2);
+    }
+    &::before {
+      top: calc(25% + #{$width-small}/2);
     }
   }
 
   &-left {
-    &::after,
-    &::before {
-      left: -.05em
-    }
-
     &::after {
-      transform: rotate(-135deg);
+      transform: rotate(45deg);
     }
-
+    
     &::before {
-      transform: rotate(135deg);
+      transform: rotate(-45deg);
     }
   }
 
   &-right {
-    &::after,
-    &::before {
-      right: -.05em
-    }
-
     &::after {
       transform: rotate(-45deg);
     }
+    
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
 
+
+  &-down,
+  &-up {
+    width: 1em;
+
+    &::after,
+    &::before {
+      top: 50%;
+      width: 50%;
+    }
+    &::after {
+      right: 12.5%;
+    }
+    &::before {
+      left: 12.5%;
+    }
+  }
+
+  &-down {
+    &::after {
+      transform: rotate(-45deg);
+    }
+    
     &::before {
       transform: rotate(45deg);
     }
   }
 
   &-up {
-    &::after,
-    &::before {
-      top: -.05em
-    }
-
     &::after {
-      transform: rotate(-45deg);
-      left: -.111em
+      transform: rotate(45deg);
     }
     
     &::before {
-      transform: rotate(45deg);
-      right: -.111em;
-    }
-  }
-
-  &-down {
-    &::after,
-    &::before {
-      top: -.05em
-    }
-
-    &::after {
       transform: rotate(-45deg);
-      left: .111em
-    }
-    
-    &::before {
-      transform: rotate(45deg);
-      right: .111em;
     }
   }
 }
