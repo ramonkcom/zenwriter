@@ -1,7 +1,6 @@
 <?php
 /* ========================================================================== */
-/* FRONT END
-/* This file contains all Wordpress front-end related functions
+/* THEME
 /* ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
@@ -18,6 +17,14 @@ function zenwriter_wp_enqueue_script() {
 }
 
 /* -------------------------------------------------------------------------- */
+/* Main Menu
+/* -------------------------------------------------------------------------- */
+add_action('init', 'zenwriter_register_menus');
+function zenwriter_register_menus() {
+    register_nav_menu('main-menu', __('Main Menu', 'zenwriter'));
+}
+
+/* -------------------------------------------------------------------------- */
 /* Post
 /* -------------------------------------------------------------------------- */
 /* Changes excerpt formatting */
@@ -26,17 +33,15 @@ function zenwriter_excerpt_more() {
     return ' (...)';
 }
 
+/* Removes 'read more' links */
 add_filter('the_content_more_link', 'zenwriter_remove_read_more_link');
 function zenwriter_remove_read_more_link() {
     return '';
 }
 
-// add_filter('the_content_more_link', 'zenwriter_remove_read_more_link_scroll');
-// function zenwriter_remove_read_more_link_scroll($link) {
-// 	$link = preg_replace('|#more-[0-9]+|', '', $link);
-// 	return $link;
-// }
-
+/* -------------------------------------------------------------------------- */
+/* Archive
+/* -------------------------------------------------------------------------- */
 /* Remove the label from archives title */
 add_filter( 'get_the_archive_title', 'zenwriter_archive_title' );
 function zenwriter_archive_title( $title ) {
@@ -52,6 +57,20 @@ function zenwriter_archive_title( $title ) {
         $title = single_term_title('', false);
     }
     return $title;
+}
+
+/* -------------------------------------------------------------------------- */
+/* Search
+/* -------------------------------------------------------------------------- */
+/* Exclude pages from WordPress Search */
+add_filter('pre_get_posts','zenwriter_search_filter');
+function zenwriter_search_filter($query) {
+    if (!is_admin()) {
+        if ($query->is_search) {
+            $query->set('post_type', 'post');
+        }
+        return $query;
+    }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -124,15 +143,51 @@ function zenwriter_posts_link_attributes($output) {
 }
 
 /* -------------------------------------------------------------------------- */
-/* Search
+/* Post format support
 /* -------------------------------------------------------------------------- */
-//Exclude pages from WordPress Search
-add_filter('pre_get_posts','zenwriter_search_filter');
-function zenwriter_search_filter($query) {
-    if (!is_admin()) {
-        if ($query->is_search) {
-            $query->set('post_type', 'post');
-        }
-        return $query;
+add_action('after_setup_theme', 'zenwriter_theme_support');
+function zenwriter_theme_support()
+{
+    add_theme_support('post-thumbnails');
+    add_theme_support('post-formats', array(
+        'audio',
+        'image',
+        'link',
+        'quote',
+        'video'
+    ));
+}
+
+/* -------------------------------------------------------------------------- */
+/* Extra fields for user profile
+/* -------------------------------------------------------------------------- */
+add_action('show_user_profile', 'zenwriter_extra_user_fields');
+add_action('edit_user_profile', 'zenwriter_extra_user_fields');
+
+function zenwriter_extra_user_fields( $user ) { ?>
+    <h3><?php _e('Social networks', 'zenwriter'); ?></h3>
+    <table class="form-table">
+        <?php
+        foreach(social_links() as $name => $key) :
+        ?>
+            <tr>
+                <th><label for="<?php echo $key; ?>"><?php _e($name); ?></label></th>
+                <td>
+                    <input type="text" name="<?php echo $key; ?>" id="<?php echo $key; ?>" value="<?php echo esc_attr(get_the_author_meta($key, $user->ID)); ?>" class="regular-text" /><br />
+                    <span class="description"><?php printf(esc_html__('Please enter your %s profile URL.', 'zenwriter'), $name); ?></span>
+                </td>
+            </tr>
+        <?php endforeach; ?>
+    </table>
+<?php }
+
+add_action('personal_options_update', 'zenwriter_save_extra_user_fields');
+add_action('edit_user_profile_update', 'zenwriter_save_extra_user_fields');
+function zenwriter_save_extra_user_fields($user_id) {
+    if (!current_user_can('edit_user', $user_id)) { 
+        return false; 
+    }
+    foreach(social_links() as $name => $key) {
+        update_user_meta($user_id, $key, $_POST[$key]);
     }
 }
