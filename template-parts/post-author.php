@@ -1,4 +1,5 @@
-<aside class="post-author">
+<?php $description = get_the_author_meta('description'); ?>
+<aside class="post-author<?php if ('' == $description || strlen($description) < 40) echo ' post-author--short'; ?>">
     <figure class="post-author__avatar" style="background-image: url(<?php echo get_avatar_url(get_the_author_meta('ID'), array('size' => 256, 'default' => 'mystery')); ?>)">
         <?php echo get_avatar(get_the_author_meta('ID'), 128, null, get_the_author_meta('display_name')); ?>
     </figure><!-- .post-author__avatar -->
@@ -7,7 +8,7 @@
             <?php the_author_posts_link(); ?>
         </h2><!-- .post-author__name -->
         <div class="post-author__description">
-            <?php echo get_the_author_meta('description'); ?>
+            <?php echo $description; ?>
             <div class="post-author__links">
                 <?php  
                 foreach(social_links() as $name => $key) :

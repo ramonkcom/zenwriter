@@ -9,6 +9,10 @@
   font-size: $font-size-copy;
   justify-content: flex-start;
 
+  &--short {
+    align-items: center;
+  }
+
   &__about {
     width: calc(100% - 8rem - #{$space-small});
     padding-left: $space-small;

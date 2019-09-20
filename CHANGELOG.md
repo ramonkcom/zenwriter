@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 ### Changed
 - Page no longer scrolls when the navigation is open
+- Post author layout
 
 ---
 
