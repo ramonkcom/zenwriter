@@ -14,11 +14,11 @@
   }
 
   &__about {
-    width: calc(100% - 8rem - #{$space-small});
+    width: calc(100% - #{8rem - $space-small});
     padding-left: $space-small;
 
     @include respond-to('small') {
-      width: calc(100% - 12rem - #{$space-small});
+      width: calc(100% - #{12rem - $space-small});
     }
   }
 
@@ -41,7 +41,7 @@
 
   &__description {
     font-family: $font-family-interaction;
-    font-size: calc(#{$font-size-copy} * #{$scale-small});
+    font-size: #{$font-size-copy * $scale-small};
 
     @include respond-to('small') {
       font-size: $font-size-copy;
@@ -58,7 +58,7 @@
     margin-bottom: $space-x-small;
 
     @include respond-to('small') {
-      font-size: calc(#{$font-size-copy} * #{$scale-large});
+      font-size: #{$font-size-copy * $scale-large};
     }
   }
 }

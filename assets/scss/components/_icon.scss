@@ -30,10 +30,10 @@
       width: 100%;
     }
     &::after {
-      bottom: calc(25% + #{$width-small}/2);
+      bottom: calc(25% + #{$width-small/2});
     }
     &::before {
-      top: calc(25% + #{$width-small}/2);
+      top: calc(25% + #{$width-small/2});
     }
   }
 

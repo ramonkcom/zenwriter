@@ -12,7 +12,7 @@
     height: 100vh;
     right: 0;
     opacity: 0;
-    padding: calc(#{$space-medium} + #{$space-small}) 0;
+    padding: #{$space-medium + $space-small} 0;
     position: fixed;
     transition-delay: 0;
     transition-duration: $speed-fast;
@@ -30,8 +30,8 @@
     padding-right: $space-medium;
     
     @include respond-to('small') {
-      padding-left: calc(#{$space-medium} + #{$space-small});
-      padding-right: calc(#{$space-medium} + #{$space-small});
+      padding-left: #{$space-medium + $space-small};
+      padding-right: #{$space-medium + $space-small};
       width: 70%;
     }
 
@@ -40,8 +40,8 @@
         100vw                                         /* viewport width */
         - ((100vw - 76.8rem) / 2) - 76.8rem           /* minus grid left margin and grid itself */
         + #{$space-small}                             /* plus the grid gutter */
-        + (#{$space-medium} + #{$space-small}) / 2    /* plus the width of toggle; */
-        + #{$space-medium} + #{$space-small}          /* pluss the padding of the navigation content */
+        + #{($space-medium + $space-small) / 2}    /* plus the width of toggle; */
+        + #{$space-medium + $space-small}          /* pluss the padding of the navigation content */
       );
     }
   }
@@ -67,7 +67,7 @@
 
     @include respond-to('small') {
       width: 100%;
-      max-width: calc(.45 * 76.8rem - 2 * (#{$space-medium} + #{$space-small}));
+      max-width: #{.45 * 76.8rem - 2 * $space-medium + $space-small};
       padding: $space-medium 0;
     }
   }
@@ -143,8 +143,8 @@
               100vw                                         /* viewport width */
               - ((100vw - 76.8rem) / 2) - 76.8rem           /* minus grid left margin and grid itself */
               + #{$space-small}                             /* plus the grid gutter */
-              + (#{$space-medium} + #{$space-small}) / 2    /* plus the width of toggle; */
-              + #{$space-medium} + #{$space-small}          /* pluss the padding of the navigation content */
+              + (#{$space-medium + $space-small}) / 2    /* plus the width of toggle; */
+              + #{$space-medium + $space-small}          /* pluss the padding of the navigation content */
               ));
             }
             
@@ -162,8 +162,8 @@
                   100vw                                         /* viewport width */
                   - ((100vw - 76.8rem) / 2) - 76.8rem           /* minus grid left margin and grid itself */
                   + #{$space-small}                             /* plus the grid gutter */
-                  + (#{$space-medium} + #{$space-small}) / 2    /* plus the width of toggle; */
-                  + #{$space-medium} + #{$space-small}          /* pluss the padding of the navigation content */
+                  + (#{$space-medium + $space-small}) / 2    /* plus the width of toggle; */
+                  + #{$space-medium + $space-small}          /* pluss the padding of the navigation content */
                 ));
               }
             }
@@ -181,12 +181,12 @@
         flex-direction: column;
         font-family: zenwriter;
         font-size: $font-size-copy;
-        height: calc((#{$space-medium}) / 2);
+        height: #{$space-medium / 2};
         justify-content: center;
         position: absolute;
         top: .5em;
-        right: calc(-1 * #{$space-medium});
-        width: calc((#{$space-medium}) / 2);
+        right: -1#{$space-medium};
+        width: #{$space-medium / 2};
       }
     }
   }
@@ -195,7 +195,7 @@
     label {
       display: block;
       line-height: 1;
-      margin-bottom: calc(#{$font-size-copy} * #{$scale-small});
+      margin-bottom: #{$font-size-copy * $scale-small};
       
       @include respond-to('small') {
         margin-bottom: $font-size-copy;
@@ -218,7 +218,7 @@
     }
 
     .title-medium {
-      margin-bottom: calc(#{$font-size-copy} * #{$scale-small});
+      margin-bottom: #{$font-size-copy * $scale-small};
       
       @include respond-to('small') {
         margin-bottom: $font-size-copy;
@@ -234,11 +234,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: calc((#{$space-medium} + #{$space-small}) / 2);
+    height: #{($space-medium + $space-small) / 2};
     position: relative;
     text-align: center;
     transition-duration: $speed-fast;
-    width: calc((#{$space-medium} + #{$space-small}) / 2);
+    width: #{($space-medium + $space-small) / 2};
     z-index: 2000;
     
     @include respond-to('medium') {
@@ -295,14 +295,14 @@
     color: $color-foreground-max;
     margin-left: calc(-1 * (
       85vw                                            /* navigation content width */
-      - #{$space-medium} - #{$space-small}            /* minus navigation content padding */
+      - #{$space-medium - $space-small}            /* minus navigation content padding */
     ));
     
     @include respond-to('small') {
       margin-left: calc(-1 * (
         45vw                                            /* navigation content width */
         - ((100vw - 76.8rem) / 2) - #{$space-small}     /* minus current position */
-        - #{$space-medium} - #{$space-small}            /* minus navigation content padding */
+        - #{$space-medium - $space-small}            /* minus navigation content padding */
       ));
     }
     

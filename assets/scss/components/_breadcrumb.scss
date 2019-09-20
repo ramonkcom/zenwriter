@@ -5,7 +5,7 @@
 .breadcrumb {
   color: $color-foreground-3;
   font-family: $font-family-interaction;
-  font-size: calc(#{$font-size-copy} * #{$scale-small});
+  font-size: #{$font-size-copy * $scale-small};
   opacity: .75;
   transition-duration: $speed-fast;
   

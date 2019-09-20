@@ -9,7 +9,7 @@ body, html {
 body {
   background-color: $color-background-1;
   color: $color-foreground-2;
-  padding-top: calc(#{$space-medium} + #{$space-small});
+  padding-top: #{$space-medium + $space-small};
 
   &.no-scrolling {
     height: 100%; 
@@ -58,8 +58,8 @@ input[type=text] {
   padding: .3em 1.2em;
 
   @include respond-to("small") {
-    font-size: calc(#{$font-size-copy} * #{$scale-large});
-    line-height: calc(#{$font-height-copy}  * #{$scale-large});
+    font-size: #{$font-size-copy * $scale-large};
+    line-height: #{$font-height-copy  * $scale-large};
   }
 }
 

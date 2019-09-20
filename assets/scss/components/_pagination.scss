@@ -35,6 +35,6 @@
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
-    padding: calc((#{$space-medium} + #{$space-small}) / 4) 0;
+    padding: #{($space-medium + $space-small) / 4} 0;
   }
 }

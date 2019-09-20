@@ -4,10 +4,10 @@
 
 .post-listing {
   &__no-result-message {
-    padding: calc(#{$space-medium} * 2) 0;
+    padding: #{$space-medium * 2} 0;
 
     @include respond-to('small') {
-      padding: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+      padding: #{($space-medium + $space-small) * 2} 0;
     }
   }
 }

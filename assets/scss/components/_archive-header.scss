@@ -5,33 +5,33 @@
 .archive-header {
   background-color: $color-background-max;
   border-bottom: $width-x-small solid $color-background-3;
-  padding: calc(#{$space-medium} * 2) 0;
+  padding: #{$space-medium * 2} 0;
 
   @include respond-to('small') {
-    padding: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+    padding: #{($space-medium + $space-small) * 2} 0;
   }
 
   .button {
-    margin-top: calc(#{$font-size-copy} * #{$scale-large});
+    margin-top: #{$font-size-copy * $scale-large};
 
     @include respond-to('small') {
-      margin-top: calc(#{$font-size-copy} * #{$scale-large} * #{$scale-large});
+      margin-top: #{$font-size-copy * $scale-large * $scale-large};
     }
   }
 
   &__description {
-    font-size: calc(#{$font-size-copy} * #{$scale-large});
+    font-size: #{$font-size-copy * $scale-large};
   }
 
   &__search-form {
     align-items: center;
     display: flex;
     flex-direction: row;
-    margin-top: calc(#{$font-size-copy} * #{$scale-large});
+    margin-top: #{$font-size-copy * $scale-large};
     justify-content: stretch;
 
     @include respond-to('small') {
-      margin-top: calc(#{$font-size-copy} * #{$scale-large} * #{$scale-large});
+      margin-top: #{$font-size-copy * $scale-large * $scale-large};
     }
 
     .button {

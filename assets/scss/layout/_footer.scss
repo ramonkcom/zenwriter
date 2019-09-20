@@ -8,7 +8,7 @@
 
   &__content {
     font-family: $font-family-interaction;
-    font-size: calc(#{$font-size-copy} * #{$scale-small});
+    font-size: #{$font-size-copy * $scale-small};
     padding: $space-small 0;
     
     @include respond-to('small') {
@@ -16,7 +16,7 @@
       display: flex;
       flex-direction: row;
       font-size: $font-size-copy;
-      height: calc(#{$space-medium} + #{$space-small});
+      height: #{$space-medium + $space-small};
       justify-content: space-between;
     }
   }
@@ -26,7 +26,7 @@
       display: block;
       
       @include respond-to('small') {
-        padding: 0 calc(#{$space-small} / 2);
+        padding: 0 #{$space-small / 2};
       }
     }
     

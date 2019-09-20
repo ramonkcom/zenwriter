@@ -9,8 +9,6 @@
   border-right: 0;
 
   &__item {
-    // border-left: $width-x-small solid $color-background-3;
-    // padding: calc((#{$space-medium} + #{$space-small}) / 4);
     width: calc(50% - #{$space-small/2});
     
     &--empty {
@@ -23,7 +21,7 @@
     
     &-label {
       font-family: $font-family-interaction;
-      font-size: calc(#{$font-size-copy} * #{$scale-small});
+      font-size: #{$font-size-copy * $scale-small};
       font-weight: $font-weight-copy;
       margin-bottom: $space-x-small;
       

@@ -5,10 +5,10 @@
 .post {
   
   &--full {
-    padding-top: calc(#{$space-medium} * 2);
+    padding-top: #{$space-medium * 2};
 
     @include respond-to('small') {
-      padding-top: calc((#{$space-medium} + #{$space-small}) * 2);
+      padding-top: #{($space-medium + $space-small) * 2};
     }
 
     .post__content>blockquote,
@@ -44,11 +44,11 @@
 
     .post-author {
       margin: $space-medium 0;
-      margin: calc(#{$space-medium} * 2) 0;
+      margin: #{$space-medium * 2} 0;
       
       @include respond-to('small') {
         margin: $space-large 0;
-        margin: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+        margin: #{($space-medium + $space-small) * 2} 0;
       }
     }
 
@@ -73,11 +73,11 @@
     transition-duration: $speed-medium;
 
     &:first-child {
-      padding-top: calc(#{$space-medium} * 2);
+      padding-top: #{$space-medium * 2};
     }
   
     &:last-child {
-      padding-bottom: calc(#{$space-medium} * 2);
+      padding-bottom: #{$space-medium * 2};
     }
     
     &:hover {
@@ -91,19 +91,19 @@
     }
 
     @include respond-to('small') {
-      padding: calc(#{$space-medium} + #{$space-small}) 0;
+      padding: #{$space-medium + $space-small} 0;
   
       &:first-child {
-        padding-top: calc((#{$space-medium} + #{$space-small}) * 2);
+        padding-top: #{($space-medium + $space-small) * 2};
       }
   
       &:last-child {
-        padding-bottom: calc((#{$space-medium} + #{$space-small}) * 2);
+        padding-bottom: #{($space-medium + $space-small) * 2};
       }
     }
 
     .post__read-more {
-      margin-top: calc(#{$font-size-copy} * #{$scale-small});
+      margin-top: #{$font-size-copy * $scale-small};
       
       @include respond-to('small') {
         margin-top: $font-size-copy;
@@ -111,21 +111,21 @@
     }
 
     .post__content {
-      margin: calc(#{$font-size-copy}) 0;
-      padding: calc(#{$font-size-copy}) 0;
+      margin: #{$font-size-copy} 0;
+      padding: #{$font-size-copy} 0;
       
       @include respond-to('small') {
-        margin: calc(#{$font-size-copy} * #{$scale-large}) 0;
-        padding: calc(#{$font-size-copy} * #{$scale-large}) 0;
+        margin: #{$font-size-copy * $scale-large} 0;
+        padding: #{$font-size-copy * $scale-large} 0;
       }
     }
   }
 
   &--page {
-    padding: calc(#{$space-medium} * 2) 0;
+    padding: #{$space-medium * 2} 0;
 
     @include respond-to('small') {
-      padding: calc((#{$space-medium} + #{$space-small}) * 2) 0;
+      padding: #{($space-medium + $space-small) * 2} 0;
     }
   }
   
@@ -133,14 +133,14 @@
     border: $width-x-small solid $color-background-3;
     border-left: 0;
     border-right: 0;
-    margin: calc(#{$font-size-copy}) 0;
-    padding: calc(#{$font-size-copy} * 2) 0;
+    margin: #{$font-size-copy} 0;
+    padding: #{$font-size-copy * 2} 0;
 
     @include clearfix;
     
     @include respond-to('small') {
-      margin: calc(#{$font-size-copy} * #{$scale-large}) 0;
-      padding: calc(#{$font-size-copy} * #{$scale-large} * 2) 0;
+      margin: #{$font-size-copy * $scale-large} 0;
+      padding: #{$font-size-copy * $scale-large * 2} 0;
     }
 
     >blockquote,
@@ -161,7 +161,7 @@
       }
   
       @include respond-to('small') {
-        margin-bottom: calc(#{$font-size-copy} * #{$scale-large});
+        margin-bottom: #{$font-size-copy * $scale-large};
 
         &:last-child {
           margin-bottom: 0;
@@ -235,14 +235,14 @@
 
         figure {
           border-radius: 999px;
-          height: calc(#{$font-size-copy} * 5);
+          height: #{$font-size-copy * 5};
           margin-right: 1em;
           overflow: hidden;
-          width: calc(#{$font-size-copy} * 5);
+          width: #{$font-size-copy * 5};
           
           @include respond-to('small') {
-            height: calc(#{$font-size-copy} * #{$scale-large} * 5);
-            width: calc(#{$font-size-copy} * #{$scale-large} * 5);
+            height: #{$font-size-copy * $scale-large * 5};
+            width: #{$font-size-copy * $scale-large * 5};
           }
         }
       }
@@ -250,13 +250,13 @@
       p {
         color: lighten($color-foreground-1, 60%);
         font-style: italic;
-        font-size: calc(#{$font-size-copy} * #{$scale-large});
+        font-size: #{$font-size-copy * $scale-large};
         line-height: $scale-x-large;
-        margin-bottom: calc(#{$font-size-copy} * #{$scale-small});
+        margin-bottom: #{$font-size-copy * $scale-small};
 
         @include respond-to('small') {
-          font-size: calc(#{$font-size-copy} * #{$scale-large} * #{$scale-large});
-          margin-bottom: calc(#{$font-size-copy});
+          font-size: #{$font-size-copy * $scale-large * $scale-large};
+          margin-bottom: #{$font-size-copy};
         }
       }
 
@@ -269,9 +269,9 @@
 
         p {
           color: $color-foreground-1;
-          font-size: calc(#{$font-size-copy} * #{$scale-x-large});
+          font-size: #{$font-size-copy * $scale-x-large};
           @include respond-to('small') {
-            font-size: calc(#{$font-size-copy} * #{$scale-x-large} * #{$scale-x-large});
+            font-size: #{$font-size-copy * $scale-x-large * $scale-x-large};
           }
         }
       }
@@ -381,7 +381,7 @@
     }
 
     @include respond-to('small') {
-      margin-bottom: calc(#{$font-size-copy} * #{$scale-large});
+      margin-bottom: #{$font-size-copy * $scale-large};
     }
 
     img {

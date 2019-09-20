@@ -26,14 +26,14 @@
     align-items: center;
     display: flex;
     flex-direction: row;
-    height: calc(#{$space-medium} + #{$space-small});
-    padding-bottom: calc((#{$space-medium} + #{$space-small}) / 4);
-    padding-top: calc((#{$space-medium} + #{$space-small}) / 4);
+    height: #{$space-medium + $space-small};
+    padding-bottom: #{($space-medium + $space-small) / 4};
+    padding-top: #{($space-medium + $space-small) / 4};
     position: relative;
   }
 
   &__logo {
-    height: calc((#{$space-medium} + #{$space-small}) / 2);
+    height: #{($space-medium + $space-small) / 2};
     width: auto;
   }
   
@@ -52,12 +52,12 @@
   
   &__title {
     display: inline-block;
-    font-size: calc((#{$space-medium} + #{$space-small}) / 2);
-    height: calc((#{$space-medium} + #{$space-small}) / 2);
-    line-height: calc((#{$space-medium} + #{$space-small}) / 2);
+    font-size: #{($space-medium + $space-small) / 2};
+    height: #{($space-medium + $space-small) / 2};
+    line-height: #{($space-medium + $space-small) / 2};
 
     &--long {
-      font-size: calc((#{$space-medium} + #{$space-small}) / 4);
+      font-size: #{($space-medium + $space-small) / 4};
     }
   }
 }

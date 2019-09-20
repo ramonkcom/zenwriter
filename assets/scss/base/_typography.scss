@@ -10,8 +10,8 @@ body {
   line-height: $font-height-copy;
 
   @include respond-to("small") {
-    font-size: calc(#{$font-size-copy} * #{$scale-large});
-    line-height: calc(#{$font-height-copy}  * #{$scale-large});
+    font-size: #{$font-size-copy * $scale-large};
+    line-height: #{$font-height-copy  * $scale-large};
   }
 }
 
@@ -37,7 +37,7 @@ h6,
   margin-bottom: $font-size-copy;
   
   @include respond-to('small') {
-    margin-bottom: calc(#{$font-size-copy} * #{$scale-large});
+    margin-bottom: #{$font-size-copy * $scale-large};
   }
 }
 h1,
