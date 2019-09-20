@@ -28,27 +28,12 @@ html {
 /* Forms
 /* -------------------------------------------------------------------------- */
 button,
-input[type=button]
-input[type=reset]
+input[type=button],
+input[type=reset],
 input[type=submit] {
-  background-color: $color-background-2;
-  border: 0;
-  border-radius: 999px;
-  color: $color-foreground-3;
-  cursor: pointer;
-  display: inline-block;
-  font-family: $font-family-interaction;
-  font-weight: $font-weight-title;
-  line-height: 1;
-  padding: .6em 1.2em;
-  transition-duration: $speed-fast;
+  @include button-shape;
 
-  &:link,
-  &:visited,
-  &:hover,
-  &:active {
-    text-decoration: none;
-  }
+  background-color: $color-background-2;
 
   &:active {
     background-color: $color-brand-primary;

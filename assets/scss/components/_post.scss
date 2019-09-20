@@ -143,12 +143,6 @@
       padding: calc(#{$font-size-copy} * #{$scale-large} * 2) 0;
     }
 
-    img {
-      height: auto;
-      width: 100%;
-      max-width: 100%;
-    }
-
     >blockquote,
     >dd,
     >figure,
@@ -188,44 +182,7 @@
       }
     }
 
-    .aligncenter,
-    .alignleft,
-    .alignright {
-      max-width: 100%;
-    }
-
-    .aligncenter {
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .alignleft,
-    .alignright {
-      &:first-child {
-        margin-top: .3em;
-
-        @include respond-to('small') {
-          margin-top: .45em;
-        }
-      }
-    }
-
-    .alignleft {
-      float: left;
-      margin-left: 0;
-    }
-
-    .alignnone {
-      height: auto;
-      width: 100%;
-    }
-
-    .alignright {
-      float: right;
-      margin-right: 0;
-    }
-
-    blockquote {
+    >blockquote {
       position: relative;
 
       &:first-child {
@@ -317,6 +274,93 @@
             font-size: calc(#{$font-size-copy} * #{$scale-x-large} * #{$scale-x-large});
           }
         }
+      }
+    }
+
+    >img {
+      height: auto;
+      width: 100%;
+      max-width: 100%;
+    }
+
+    .aligncenter,
+    .alignleft,
+    .alignright {
+      max-width: 100%;
+    }
+    
+    .aligncenter {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    
+    .alignleft,
+    .alignright {
+      margin: 0 1em;
+      &:first-child {
+        margin-top: .3em;
+
+        @include respond-to('small') {
+          margin-top: .45em;
+        }
+      }
+    }
+
+    .alignleft {
+      float: left;
+      margin-left: 0;
+    }
+
+    .alignnone {
+      height: auto;
+      width: 100%;
+    }
+
+    .alignright {
+      float: right;
+      margin-right: 0;
+    }
+
+    .wp-block-button__link {
+      @include button-shape;
+
+      background-color: $color-background-2;
+
+      &:active {
+        background-color: $color-brand-primary;
+        color: $color-foreground-max;
+      }
+
+      @include respond-to('medium') {
+        &:hover {
+          background-color: $color-brand-primary;
+          color: $color-foreground-max;
+        }
+      }
+    }
+
+    .is-style-outline {
+      .wp-block-button__link {
+        background-color: transparent;
+        border: $width-small solid $color-background-3;
+
+        &:active {
+          border-color: $color-brand-primary;
+          color: $color-foreground-max;
+        }
+  
+        @include respond-to('medium') {
+          &:hover {
+            border-color: $color-brand-primary;
+            color: $color-foreground-max;
+          }
+        }
+      }
+    }
+
+    .is-style-squared {
+      .wp-block-button__link {
+        border-radius: 0;
       }
     }
   }

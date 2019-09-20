@@ -47,24 +47,39 @@ if (!defined('ABSPATH')) {
         <style type="text/css">
             a:active,
             .navigation__pages ul li a:active,
-            .pagination__item--active a { 
+            .pagination__item--active a,
+            .post__content .is-style-outline .wp-block-button__link:active { 
                 border-color: <?php echo $custom_brand_color; ?>; 
             }
-            b:hover, strong:hover,
+            mark:hover, 
+            button:active,
+            input[type=button]:active,
+            input[type=reset]:active,
+            input[type=submit]:active,
             .button:active,
             .button--important,
-            .navigation__checkbox:checked ~ .navigation__toggle {            
+            .navigation__checkbox:checked ~ .navigation__toggle,
+            .post__content .wp-block-button__link:active {            
                 background-color: <?php echo $custom_brand_color; ?>; 
             }
             @media (min-width: 1025px) {
                 a:hover,
-                .navigation__pages ul li a:hover { 
+                .navigation__pages ul li a:hover,
+                .post__content .is-style-outline .wp-block-button__link:hover { 
                     border-color: <?php echo $custom_brand_color; ?>; 
                 }
+                button:hover,
+                input[type=button]:hover,
+                input[type=reset]:hover,
+                input[type=submit]:hover,
                 .button:hover,
                 .button--important.button:hover,
-                .navigation__toggle:hover { 
+                .navigation__toggle:hover,
+                .post__content .wp-block-button__link:hover { 
                     background-color: <?php echo $custom_brand_color; ?>; 
+                }
+                .post__content .is-style-outline .wp-block-button__link:hover { 
+                    background-color: transparent;
                 }
                 .button--important.button:hover {
                     filter: brightness(92.5%);
