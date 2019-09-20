@@ -20,7 +20,7 @@ function zenwriter_extra_user_fields( $user ) { ?>
                 <th><label for="<?php echo $key; ?>"><?php _e($name); ?></label></th>
                 <td>
                     <input type="text" name="<?php echo $key; ?>" id="<?php echo $key; ?>" value="<?php echo esc_attr(get_the_author_meta($key, $user->ID)); ?>" class="regular-text" /><br />
-                    <span class="description"><?php printf(esc_html__('Please enter your $s profile URL.', 'zenwriter'), $name); ?></span>
+                    <span class="description"><?php printf(esc_html__('Please enter your %s profile URL.', 'zenwriter'), $name); ?></span>
                 </td>
             </tr>
         <?php endforeach; ?>

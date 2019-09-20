@@ -2,14 +2,14 @@
 # This file is distributed under the GNU General Public License v3 or later.
 msgid ""
 msgstr ""
-"Project-Id-Version: Zenwriter\n"
+"Project-Id-Version: Zenwriter 1.1.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-09-18T22:24:25+00:00\n"
+"POT-Creation-Date: 2019-09-20T13:28:41+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: zenwriter\n"
@@ -75,7 +75,7 @@ msgid "Social networks"
 msgstr ""
 
 #: inc/admin.php:23
-msgid "Please enter your $s profile URL."
+msgid "Please enter your %s profile URL."
 msgstr ""
 
 #: inc/frontend.php:90
@@ -181,15 +181,15 @@ msgid "How about trying again?"
 msgstr ""
 
 #: search.php:23
-#: template-parts/navigation.php:10
+#: template-parts/navigation.php:11
 msgid "Your search term"
 msgstr ""
 
 #: search.php:24
 #: search.php:25
-#: template-parts/navigation.php:9
-#: template-parts/navigation.php:11
+#: template-parts/navigation.php:10
 #: template-parts/navigation.php:12
+#: template-parts/navigation.php:13
 msgid "Search"
 msgstr ""
 
@@ -199,7 +199,7 @@ msgid_plural "See posts"
 msgstr[0] ""
 msgstr[1] ""
 
-#: template-parts/navigation.php:37
+#: template-parts/navigation.php:54
 msgid "Follow"
 msgstr ""
 

@@ -10,10 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Page no longer scrolls when the navigation is open
 - Post author layout
-- Scroll to top now disappears when overlapping the footer
+- Scroll to top button now disappears when overlapping the footer
 
 ### Fixed
 - Footer now stay sticked to the bottom for any content size
+- Translation issues on user profile
 
 ---
 

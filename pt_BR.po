@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-18T22:24:25+00:00\n"
-"PO-Revision-Date: 2019-09-18 19:24-0300\n"
+"POT-Creation-Date: 2019-09-20T13:28:41+00:00\n"
+"PO-Revision-Date: 2019-09-20 10:29-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -81,8 +81,8 @@ msgid "Social networks"
 msgstr "Redes sociais"
 
 #: inc/admin.php:23
-msgid "Please enter your $s profile URL."
-msgstr "Por favor, digite a URL do seu perfil do $s."
+msgid "Please enter your %s profile URL."
+msgstr "Por favor, digite a URL do seu perfil do %s."
 
 #: inc/frontend.php:90
 msgid "Previous page"
@@ -204,12 +204,12 @@ msgstr "Nenhuma postagem foi encontrada para sua busca"
 msgid "How about trying again?"
 msgstr "Que tal tentar de novo?"
 
-#: search.php:23 template-parts/navigation.php:10
+#: search.php:23 template-parts/navigation.php:11
 msgid "Your search term"
 msgstr "Sua busca"
 
-#: search.php:24 search.php:25 template-parts/navigation.php:9
-#: template-parts/navigation.php:11 template-parts/navigation.php:12
+#: search.php:24 search.php:25 template-parts/navigation.php:10
+#: template-parts/navigation.php:12 template-parts/navigation.php:13
 msgid "Search"
 msgstr "Busca"
 
@@ -219,7 +219,7 @@ msgid_plural "See posts"
 msgstr[0] "Veja a postagem"
 msgstr[1] "Veja as postagens"
 
-#: template-parts/navigation.php:37
+#: template-parts/navigation.php:54
 msgid "Follow"
 msgstr "Siga"
 
