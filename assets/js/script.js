@@ -4,9 +4,21 @@
 /* ========================================================================== */
 
 /* -------------------------------------------------------------------------- */
+/* Stop Scrolling
+/* -------------------------------------------------------------------------- */
+document.querySelector('.navigation__checkbox').addEventListener('change', function() {
+    let body = document.querySelector('body');
+    if (this.checked) {
+        body.classList.add('no-scrolling');
+    } else {
+        body.classList.remove('no-scrolling');
+    }
+});
+
+/* -------------------------------------------------------------------------- */
 /* Focus
 /* -------------------------------------------------------------------------- */
-var startContentFocusController = function () {
+var contentFocus = function () {
     function focus(elements) {
         elements.forEach(element => {
             if (element.isIntersecting) {
@@ -40,7 +52,7 @@ var startContentFocusController = function () {
     }
 }
 
-var startInteractionFocusController = function () {
+var interactionFocus = function () {
     var lastScrollTop = 100;
     var header = document.querySelector('.header');
     var scrollToTop = document.querySelector('.scroll-to-top');
@@ -64,7 +76,7 @@ var startInteractionFocusController = function () {
 }
 
 window.onload = function() {
-    startInteractionFocusController();
-    startContentFocusController();
+    interactionFocus();
+    contentFocus();
 }
 

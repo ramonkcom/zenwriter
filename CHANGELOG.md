@@ -7,10 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## Unreleased
+### Changed
+- Page no longer scrolls when the navigation is open
 
 ---
 
-## [1.1.0] - 2019-0919
+## [1.1.0] - 2019-09-19
 ### Added
 - Support for hierarchical menus on main menu
 
