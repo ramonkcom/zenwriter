@@ -10,7 +10,7 @@
 add_action('wp_enqueue_scripts', 'zenwriter_wp_enqueue_script');
 function zenwriter_wp_enqueue_script() {
     /* CSS includes */
-    wp_enqueue_style('google-fonts-css', 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,400i&display=swap', array(), null, 'all');
+    wp_enqueue_style('google-fonts-css', 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,700|IBM+Plex+Serif:400,400i,700&display=swap', array(), null, 'all');
 	wp_enqueue_style('zenwriter-base-css', get_stylesheet_directory_uri() . '/style.css', array('google-fonts-css'), ZENWRITER_VERSION, 'all');
 	/* JS includes */
 	wp_enqueue_script('zenwriter-base-js', get_theme_file_uri('/assets/js/script.min.js'), array('jquery'), ZENWRITER_VERSION, true);

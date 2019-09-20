@@ -72,6 +72,15 @@ a {
 
 b, 
 strong {
+  font-weight: 700;
+}
+
+em,
+i {
+  font-style: italic;
+}
+
+mark {
   background-color: $color-background-2;
   transition-duration: $speed-fast;
   
