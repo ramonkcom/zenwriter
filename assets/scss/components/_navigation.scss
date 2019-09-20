@@ -264,7 +264,7 @@
       &,
       &::before,
       &::after {
-        height: .2rem;
+        height: $width-small;
         background-color: $color-foreground-2;
         display: inline-block;
         width: 1.8rem;

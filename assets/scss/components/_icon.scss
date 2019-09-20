@@ -1,0 +1,96 @@
+.icon {
+  &-down,
+  &-left,
+  &-right,
+  &-up {
+    display: inline-block;
+    position: relative;
+    margin: 0 auto;
+    height: 0;
+    width: .4em;
+  
+    &::before,
+    &::after {
+      background-color: $color-foreground-2;
+      content: "";
+      display: inline-block;
+      height: $width-small;
+      transition: all;
+      transition-duration: $speed-fast;
+      position: absolute;
+      width: 100%;
+    }
+  
+    &::before {
+      top: -.111em;
+    }
+  
+    &::after {
+      top: .111em;
+    }
+  }
+
+  &-left {
+    &::after,
+    &::before {
+      left: -.05em
+    }
+
+    &::after {
+      transform: rotate(-135deg);
+    }
+
+    &::before {
+      transform: rotate(135deg);
+    }
+  }
+
+  &-right {
+    &::after,
+    &::before {
+      right: -.05em
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
+
+    &::before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &-up {
+    &::after,
+    &::before {
+      top: -.05em
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      left: -.111em
+    }
+    
+    &::before {
+      transform: rotate(45deg);
+      right: -.111em;
+    }
+  }
+
+  &-down {
+    &::after,
+    &::before {
+      top: -.05em
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+      left: .111em
+    }
+    
+    &::before {
+      transform: rotate(45deg);
+      right: .111em;
+    }
+  }
+}

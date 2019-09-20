@@ -34,12 +34,6 @@
   content: attr(data-icon);
 }
 
-.icon-left:before {
-  content: "\61";
-}
-.icon-right:before {
-  content: "\62";
-}
 .icon-facebook:before {
   content: "\67";
 }
@@ -70,14 +64,8 @@
 .icon-youtube:before {
   content: "\6a";
 }
-.icon-up:before {
-  content: "\63";
-}
 .icon-github:before {
   content: "\6d";
-}
-.icon-down:before {
-  content: "\64";
 }
 .icon-spotify:before {
   content: "\70";
