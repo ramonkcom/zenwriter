@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-09-20T14:32:41+00:00\n"
+"POT-Creation-Date: 2019-09-20T18:24:45+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: zenwriter\n"
@@ -70,96 +70,96 @@ msgstr ""
 msgid "No post found."
 msgstr ""
 
-#: inc/admin.php:56
-msgid "Social networks"
-msgstr ""
-
-#: inc/admin.php:65
-msgid "Please enter your %s profile URL."
-msgstr ""
-
-#: inc/frontend.php:90
-msgid "Previous page"
-msgstr ""
-
-#: inc/frontend.php:115
-msgid "Next page"
-msgstr ""
-
-#: inc/wordpress.php:13
-msgid "Main Menu"
-msgstr ""
-
-#: inc/wordpress.php:45
+#: inc/customizer.php:16
 msgid "Google settings"
 msgstr ""
 
-#: inc/wordpress.php:46
+#: inc/customizer.php:17
 msgid "Google Analytics and Google Search Console settings."
 msgstr ""
 
-#: inc/wordpress.php:64
+#: inc/customizer.php:35
 msgid "Google Analytics ID"
 msgstr ""
 
-#: inc/wordpress.php:65
+#: inc/customizer.php:36
 msgid "The Google Analytics ID is a alphanumerical string like \"UA-123456789-0\" (the number of characters may vary)."
 msgstr ""
 
-#: inc/wordpress.php:87
+#: inc/customizer.php:58
 msgid "Google Search Console meta tag"
 msgstr ""
 
-#: inc/wordpress.php:88
+#: inc/customizer.php:59
 msgid "The Google Search Console meta tag is a alphanumerical string like \"aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR\" (the number of characters may vary)."
 msgstr ""
 
-#: inc/wordpress.php:103
+#: inc/customizer.php:74
 msgid "Social networks links"
 msgstr ""
 
-#: inc/wordpress.php:104
+#: inc/customizer.php:75
 msgid "Social networks profiles."
 msgstr ""
 
-#: inc/wordpress.php:124
+#: inc/customizer.php:95
 msgid "The full URL for your %s profile, not just the username."
 msgstr ""
 
-#: inc/wordpress.php:150
+#: inc/customizer.php:120
 msgid "Positive logo"
 msgstr ""
 
-#: inc/wordpress.php:151
+#: inc/customizer.php:121
 msgid "Select the logo image to be used in the light backgrounds."
 msgstr ""
 
-#: inc/wordpress.php:173
+#: inc/customizer.php:143
 msgid "Negative logo"
 msgstr ""
 
-#: inc/wordpress.php:174
+#: inc/customizer.php:144
 msgid "Select the logo image to be used in the dark backgrounds."
 msgstr ""
 
-#: inc/wordpress.php:199
+#: inc/customizer.php:169
 msgid "Brand color"
 msgstr ""
 
-#: inc/wordpress.php:200
+#: inc/customizer.php:170
 msgid "Select the brand color to be applied on theme interactive items."
 msgstr ""
 
-#: inc/wordpress.php:211
+#: inc/customizer.php:181
 msgid "\"Simplicity is the final achievement.\" - Frederic Chopin"
 msgstr ""
 
-#: inc/wordpress.php:222
+#: inc/customizer.php:192
 msgid "Footer copy"
 msgstr ""
 
-#: inc/wordpress.php:223
+#: inc/customizer.php:193
 msgid "The text that is displayed in the footer."
+msgstr ""
+
+#: inc/theme.php:24
+msgid "Main Menu"
+msgstr ""
+
+#: inc/theme.php:109
+msgid "Previous page"
+msgstr ""
+
+#: inc/theme.php:134
+msgid "Next page"
+msgstr ""
+
+#: inc/theme.php:168
+msgid "Social networks"
+msgstr ""
+
+#: inc/theme.php:177
+msgid "Please enter your %s profile URL."
 msgstr ""
 
 #: search.php:5
@@ -251,7 +251,11 @@ msgstr ""
 msgid "m/d/Y"
 msgstr ""
 
-#: template-parts/post-meta.php:39
+#: template-parts/post-meta.php:36
+msgid "Posts on %1$s of %2$s"
+msgstr ""
+
+#: template-parts/post-meta.php:41
 msgid "in"
 msgstr ""
 

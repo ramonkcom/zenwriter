@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-20T14:32:41+00:00\n"
-"PO-Revision-Date: 2019-09-20 11:33-0300\n"
+"POT-Creation-Date: 2019-09-20T18:24:45+00:00\n"
+"PO-Revision-Date: 2019-09-20 15:25-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -76,39 +76,19 @@ msgstr "Você pode ver todas as postagens em"
 msgid "No post found."
 msgstr "Nenhuma postagem encontrada."
 
-#: inc/admin.php:56
-msgid "Social networks"
-msgstr "Redes sociais"
-
-#: inc/admin.php:65
-msgid "Please enter your %s profile URL."
-msgstr "Por favor, digite a URL do seu perfil do %s."
-
-#: inc/frontend.php:90
-msgid "Previous page"
-msgstr "Página anterior"
-
-#: inc/frontend.php:115
-msgid "Next page"
-msgstr "Próxima página"
-
-#: inc/wordpress.php:13
-msgid "Main Menu"
-msgstr "Menu Principal"
-
-#: inc/wordpress.php:45
+#: inc/customizer.php:16
 msgid "Google settings"
 msgstr "Configurações do Google"
 
-#: inc/wordpress.php:46
+#: inc/customizer.php:17
 msgid "Google Analytics and Google Search Console settings."
 msgstr "Configurações do Google Analytics e do Google Search Console."
 
-#: inc/wordpress.php:64
+#: inc/customizer.php:35
 msgid "Google Analytics ID"
 msgstr "ID do Google Analytics"
 
-#: inc/wordpress.php:65
+#: inc/customizer.php:36
 msgid ""
 "The Google Analytics ID is a alphanumerical string like "
 "\"UA-123456789-0\" (the number of characters may vary)."
@@ -116,11 +96,11 @@ msgstr ""
 "O ID do Google Analytics é uma sequência alfanumérica como "
 "“UA-123456789-0” (o número de caracteres pode variar)."
 
-#: inc/wordpress.php:87
+#: inc/customizer.php:58
 msgid "Google Search Console meta tag"
 msgstr "Meta tag do Google Search Console"
 
-#: inc/wordpress.php:88
+#: inc/customizer.php:59
 msgid ""
 "The Google Search Console meta tag is a alphanumerical string like "
 "\"aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR\" (the number of characters may "
@@ -130,53 +110,73 @@ msgstr ""
 "“aBc123fGHIjk456lmn_aBc123fGHIjk456lmnopQR” (o número de caracteres pode "
 "variar)."
 
-#: inc/wordpress.php:103
+#: inc/customizer.php:74
 msgid "Social networks links"
 msgstr "Links de redes sociais"
 
-#: inc/wordpress.php:104
+#: inc/customizer.php:75
 msgid "Social networks profiles."
 msgstr "Perfis de redes sociais."
 
-#: inc/wordpress.php:124
+#: inc/customizer.php:95
 msgid "The full URL for your %s profile, not just the username."
 msgstr "A URL completa para o seu perfil no %s, não apenas o nome de usuário."
 
-#: inc/wordpress.php:150
+#: inc/customizer.php:120
 msgid "Positive logo"
 msgstr "Logo positivo"
 
-#: inc/wordpress.php:151
+#: inc/customizer.php:121
 msgid "Select the logo image to be used in the light backgrounds."
 msgstr "Selecione a imagem do logo a ser usada em fundos claros."
 
-#: inc/wordpress.php:173
+#: inc/customizer.php:143
 msgid "Negative logo"
 msgstr "Logo negativo"
 
-#: inc/wordpress.php:174
+#: inc/customizer.php:144
 msgid "Select the logo image to be used in the dark backgrounds."
 msgstr "Selecione a imagem do logo a ser usada em fundos escuros."
 
-#: inc/wordpress.php:199
+#: inc/customizer.php:169
 msgid "Brand color"
 msgstr "Cor da marca"
 
-#: inc/wordpress.php:200
+#: inc/customizer.php:170
 msgid "Select the brand color to be applied on theme interactive items."
 msgstr "Selecione a cor da marca a ser aplicada nos itens interativos do tema."
 
-#: inc/wordpress.php:211
+#: inc/customizer.php:181
 msgid "\"Simplicity is the final achievement.\" - Frederic Chopin"
 msgstr "“Simplicidade é a conquista final.” - Frederic Chopin"
 
-#: inc/wordpress.php:222
+#: inc/customizer.php:192
 msgid "Footer copy"
 msgstr "Texto do rodapé"
 
-#: inc/wordpress.php:223
+#: inc/customizer.php:193
 msgid "The text that is displayed in the footer."
 msgstr "O texto que é mostrado no rodapé."
+
+#: inc/theme.php:24
+msgid "Main Menu"
+msgstr "Menu Principal"
+
+#: inc/theme.php:109
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: inc/theme.php:134
+msgid "Next page"
+msgstr "Próxima página"
+
+#: inc/theme.php:168
+msgid "Social networks"
+msgstr "Redes sociais"
+
+#: inc/theme.php:177
+msgid "Please enter your %s profile URL."
+msgstr "Por favor, digite a URL do seu perfil do %s."
 
 #: search.php:5
 msgid "Search results for"
@@ -270,7 +270,11 @@ msgstr "no dia"
 msgid "m/d/Y"
 msgstr "j \\d\\e F \\d\\e Y"
 
-#: template-parts/post-meta.php:39
+#: template-parts/post-meta.php:36
+msgid "Posts on %1$s of %2$s"
+msgstr "Postagens em %1$s de %2$s"
+
+#: template-parts/post-meta.php:41
 msgid "in"
 msgstr "em"
 

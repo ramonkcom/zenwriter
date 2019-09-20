@@ -20,12 +20,12 @@
         $categoryLinks = trim($categoryLinks, ', ');
     }
 ?>
-<div class="post-meta">
+<aside class="post-meta">
     <span class="meta__author">
         <?php _e('Posted by', 'zenwriter'); ?>
         <?php the_author_posts_link(); ?> 
     </span><!-- .meta__author -->
-    <span class="meta__date">
+    <time class="meta__date" datetime="<?php echo get_the_date('Y-m-d H:i:s'); ?>">
         <?php _e('on day', 'zenwriter'); ?>
         <?php
             /* translators: this is a date format, see http://php.net/date 
@@ -33,9 +33,11 @@
              */
             $date_format = esc_html__('m/d/Y', 'zenwriter');
         ?>
-        <a href="<?php echo get_month_link(get_the_date('Y'), get_the_date('m')); ?>" ?><?php echo get_the_date($date_format); ?></a>
-    </span><!-- .meta__date -->
+        <a href="<?php echo get_month_link(get_the_date('Y'), get_the_date('m')); ?>" title="<?php printf(__('Posts on %1$s of %2$s', 'zenwriter'), get_the_date('F'), get_the_date('Y')); ?>">
+            <?php echo get_the_date($date_format, '', '', true); ?>
+        </a>
+    </time><!-- .meta__date -->
     <?php if (!empty($categories)) : ?>
         <?php echo __('in', 'zenwriter') . ' ' . $categoryLinks; ?>
     <?php endif; ?>
-</div><!-- .post-meta -->
+</aside><!-- .post-meta -->

@@ -1,5 +1,5 @@
 <?php $tags = get_the_tags(); ?>
-<div class="post-tags">
+<aside class="post-tags">
     <?php if ($tags) : ?>
         <?php if (is_single()) : ?>
             <h2 class="post-tags__title">
@@ -24,4 +24,4 @@
             <?php _e('No tags.', 'zenwriter'); ?>
         </span><!-- .post-tags__title -->
     <?php endif; ?>
-</div><!-- .post-tags -->
+</aside><!-- .post-tags -->
