@@ -1,0 +1,27 @@
+/* ========================================================================== */
+/* BREADCRUMB
+/* ========================================================================== */
+
+.breadcrumb {
+  color: $color-foreground-3;
+  font-family: $font-family-interaction;
+  font-size: calc(#{$font-size-copy} * #{$scale-small});
+  opacity: .75;
+  transition-duration: $speed-fast;
+  
+  @include respond-to('small') {
+    font-size: $font-size-copy;
+  }
+
+  @include respond-to('large') {
+    opacity: .5;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__item {
+    display: inline-block;
+  }
+}

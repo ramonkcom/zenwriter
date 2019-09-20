@@ -5,6 +5,7 @@
                 <h1 class="post__title">
                     <?php the_title(); ?>
                 </h1><!-- .post__title -->
+                <?php get_template_part('/template-parts/breadcrumb'); ?>
                 <section class="post__content">
                     <?php the_content(); ?>
                 </section><!-- .post__content -->

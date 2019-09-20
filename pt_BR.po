@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-20T13:28:41+00:00\n"
-"PO-Revision-Date: 2019-09-20 10:29-0300\n"
+"POT-Creation-Date: 2019-09-20T14:32:41+00:00\n"
+"PO-Revision-Date: 2019-09-20 11:33-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -76,11 +76,11 @@ msgstr "Você pode ver todas as postagens em"
 msgid "No post found."
 msgstr "Nenhuma postagem encontrada."
 
-#: inc/admin.php:14
+#: inc/admin.php:56
 msgid "Social networks"
 msgstr "Redes sociais"
 
-#: inc/admin.php:23
+#: inc/admin.php:65
 msgid "Please enter your %s profile URL."
 msgstr "Por favor, digite a URL do seu perfil do %s."
 
@@ -218,6 +218,10 @@ msgid "See post"
 msgid_plural "See posts"
 msgstr[0] "Veja a postagem"
 msgstr[1] "Veja as postagens"
+
+#: template-parts/breadcrumb.php:15
+msgid "Home"
+msgstr "Página Inicial"
 
 #: template-parts/navigation.php:54
 msgid "Follow"
