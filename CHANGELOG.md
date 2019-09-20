@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Fixed
 - Footer now stay sticked to the bottom for any content size
 - Translation issues on user profile
+- Footer link disappearing when hovered
 
 ---
 

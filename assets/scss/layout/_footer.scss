@@ -42,6 +42,13 @@
   &__zenwriter {
     font-weight: $font-weight-title;
     border: 0;
+
+    &:link,
+    &:visited,
+    &:hover,
+    &:active {
+      color: inherit;
+    }
     
     @include respond-to('small') {
       line-height: 1;
