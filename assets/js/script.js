@@ -63,12 +63,17 @@ var interactionFocus = function () {
 
     window.addEventListener("scroll", function () {
         var distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+        var distanceFromBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
+
         var menuCheckbox = document.querySelector('.navigation__checkbox');
         if (distanceFromTop > lastScrollTop && !menuCheckbox.checked) {
             header.classList.add('focus');
             scrollToTop.classList.add('focus');
         } else {
             header.classList.remove('focus');
+            scrollToTop.classList.remove('focus');
+        }
+        if (distanceFromBottom < 100) {
             scrollToTop.classList.remove('focus');
         }
         lastScrollTop = distanceFromTop <= 0 ? 0 : distanceFromTop; // For Mobile or negative scrolling
