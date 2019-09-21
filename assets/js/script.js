@@ -73,7 +73,7 @@ var interactionFocus = function () {
             header.classList.remove('focus');
             scrollToTop.classList.remove('focus');
         }
-        if (distanceFromBottom < 100) {
+        if (distanceFromBottom < 50) {
             scrollToTop.classList.remove('focus');
         }
         lastScrollTop = distanceFromTop <= 0 ? 0 : distanceFromTop; // For Mobile or negative scrolling

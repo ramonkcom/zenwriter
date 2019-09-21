@@ -7,11 +7,15 @@
   height: #{($space-medium + $space-small) / 2};
   opacity: 0;
   position: fixed;
-  right: calc(((100vw - 76.8rem)/2) + #{$space-small});
+  right: $grid-gutter;
   width: #{($space-medium + $space-small) / 2};
   z-index: 500;
 
   &.focus {
     opacity: 1;
+  }
+
+  @include respond-to ('small') {
+    right: calc(((100vw - 76.8rem)/2) + #{$space-small});
   }
 }
