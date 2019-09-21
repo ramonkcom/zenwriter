@@ -29,7 +29,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
   &__checkbox:checked~&__content {
     opacity: 1;
-    width: 85%;
+    width: 95%;
     padding-left: $content-padding-minor;
     padding-right: $content-padding-minor;
     
@@ -136,7 +136,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
         &:hover > ul {
           padding-left: $space-medium;
-          width: calc(85% - #{$content-padding-minor + $toggle-width});
+          width: calc(95% - #{$content-padding-minor + $toggle-width});
           
           @include respond-to('small') {
             width: calc(70% - #{$content-padding-major + $toggle-width});
@@ -153,7 +153,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
           li {
             &:hover > ul {
               padding-left: $space-medium;
-              width: calc(85% - #{2 * ($content-padding-minor + $toggle-width)});
+              width: calc(95% - #{2 * ($content-padding-minor + $toggle-width)});
               
               @include respond-to('small') {
                 width: calc(70% - #{2 * ($content-padding-major + $toggle-width)});
@@ -301,7 +301,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
     background-color: $color-brand-primary;
     color: $color-foreground-max;
     margin-left: calc(-1 * (
-      85vw                                            /* navigation content width */
+      95vw                                            /* navigation content width */
       - #{$space-medium + $space-small}               /* minus navigation content padding */
     ));
     
