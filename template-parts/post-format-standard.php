@@ -17,10 +17,14 @@
     </<?php echo is_front_page() && !is_home() ? 'h3' : 'h2'; ?>><!-- .post__title -->
     <?php get_template_part('/template-parts/post-meta'); ?>
     <div class="post__content">
-        <?php has_excerpt() ? the_excerpt() : the_content(); ?>
+        <?php the_excerpt(); ?>
     </div><!-- .post__content -->
     <?php get_template_part('/template-parts/post-tags'); ?>
-    <a class="post__read-more button<?php echo is_front_page() && !is_home() ? ' button--small' : ''; ?>" href="<?php the_permalink(); ?>" title="<?php echo __('Read the full post', 'zenwriter') . ': ' . get_the_title(); ?>">
+    <?php 
+        $additionalClasses = is_front_page() && !is_home() ? ' button--small' : ''; 
+       // $additionalClasses .= is_sticky() ? ' button--important' : ''; 
+    ?>
+    <a class="post__read-more button<?php echo $additionalClasses; ?>" href="<?php the_permalink(); ?>" title="<?php echo __('Read the full post', 'zenwriter') . ': ' . get_the_title(); ?>">
         <?php _e('Read the full post', 'zenwriter'); ?>
         <span class="icon-right"></span>
     </a><!-- .post__read-more -->

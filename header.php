@@ -72,7 +72,7 @@ if (!defined('ABSPATH')) {
             }
             a:hover,
             .navigation__pages ul li a:hover,
-            .post__content .is-style-outline .wp-block-button__link:hover { 
+            .post__content .is-style-outline .wp-block-button__link:hover {
                 border-color: <?php echo $custom_brand_color; ?>;
             }
             .button--important:hover {

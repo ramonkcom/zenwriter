@@ -128,6 +128,23 @@
       padding: #{($space-medium + $space-small) * 2} 0;
     }
   }
+
+  &--sticky {
+    background-color: $color-background-max;
+    padding-bottom: #{$space-medium * 2};
+
+    @include respond-to('small') {
+      padding-bottom: #{($space-medium + $space-small) * 2};
+    }
+  }
+
+  &--sticky+&--brief {
+    padding-top: #{$space-medium * 2};
+
+    @include respond-to('small') {
+      padding-top: #{($space-medium + $space-small) * 2};
+    }
+  }
   
   &__content {
     border: $width-x-small solid $color-background-3;
