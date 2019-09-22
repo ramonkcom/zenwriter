@@ -116,7 +116,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
         ul {
           background-color: $color-background-max;
-          border-left: $width-x-small solid $color-background-4;
+          border-left: $width-x-small solid $color-foreground-4;
           box-shadow: $shadow-large;
           display: flex;
           flex-direction: column;
