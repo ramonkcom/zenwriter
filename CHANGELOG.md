@@ -22,7 +22,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Better navigation styling
 - Better hover responsiveness
 - Reduced calc() usage
-- Pure CSS arrow icons
+- Pure CSS icons
 - Better styling for buttons
 - Better markup for post meta, tags and author
 - Better typography styling for bold and italic
