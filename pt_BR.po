@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-20T18:24:45+00:00\n"
-"PO-Revision-Date: 2019-09-20 15:25-0300\n"
+"POT-Creation-Date: 2019-09-22T18:43:40+00:00\n"
+"PO-Revision-Date: 2019-09-22 15:46-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -63,6 +63,28 @@ msgstr "Postado em"
 #: archive.php:43
 msgid "See posts"
 msgstr "Veja as postagens"
+
+#: comments.php:9
+msgid "One reply to this post"
+msgid_plural "%d replies to this post"
+msgstr[0] "Uma resposta a esta postagem"
+msgstr[1] "%d respostaa a esta postagem"
+
+#: comments.php:11
+msgid "Reply to this post"
+msgstr "Responda a esta postagem"
+
+#: comments.php:18
+msgid "Comments are closed."
+msgstr "Os comentários estão fechados."
+
+#: comments.php:36
+msgid "Previous comments"
+msgstr "Comentários anteriores"
+
+#: comments.php:37
+msgid "Next comments"
+msgstr "Próximos comentários"
 
 #: front-page.php:24
 msgid "Latest posts:"
@@ -158,23 +180,28 @@ msgstr "Texto do rodapé"
 msgid "The text that is displayed in the footer."
 msgstr "O texto que é mostrado no rodapé."
 
+#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
+#: inc/template-functions.php:54 template-parts/post-meta.php:34
+msgid "m/d/Y"
+msgstr "j \\d\\e F \\d\\e Y"
+
+#: inc/template-functions.php:117
+msgid "Previous page"
+msgstr "Página anterior"
+
+#: inc/template-functions.php:142
+msgid "Next page"
+msgstr "Próxima página"
+
 #: inc/theme.php:24
 msgid "Main Menu"
 msgstr "Menu Principal"
 
-#: inc/theme.php:109
-msgid "Previous page"
-msgstr "Página anterior"
-
-#: inc/theme.php:134
-msgid "Next page"
-msgstr "Próxima página"
-
-#: inc/theme.php:168
+#: inc/theme.php:98
 msgid "Social networks"
 msgstr "Redes sociais"
 
-#: inc/theme.php:177
+#: inc/theme.php:107
 msgid "Please enter your %s profile URL."
 msgstr "Por favor, digite a URL do seu perfil do %s."
 
@@ -182,12 +209,12 @@ msgstr "Por favor, digite a URL do seu perfil do %s."
 msgid "Search results for"
 msgstr "Resultados da busca para"
 
-#: search.php:11
+#: search.php:12
 msgid ""
 "One post matching your search term was found. You can browse it below or "
 "search again using the menu."
 msgid_plural ""
-"A total of %d posts matching your search term were found. You can browse "
+"A total of %s posts matching your search term were found. You can browse "
 "them below or search again using the menu."
 msgstr[0] ""
 "Uma postagem foi encontrada para a sua busca. Você pode vê-la abaixo ou "
@@ -196,24 +223,24 @@ msgstr[1] ""
 "Um total de %d postagens foram encontradas para sua busca. Você pode vê-las "
 "abaixo ou realizar uma nova busca através do menu."
 
-#: search.php:21
+#: search.php:22
 msgid "No posts were found for your search term"
 msgstr "Nenhuma postagem foi encontrada para sua busca"
 
-#: search.php:21
+#: search.php:22
 msgid "How about trying again?"
 msgstr "Que tal tentar de novo?"
 
-#: search.php:23 template-parts/navigation.php:11
+#: search.php:24 template-parts/navigation.php:11
 msgid "Your search term"
 msgstr "Sua busca"
 
-#: search.php:24 search.php:25 template-parts/navigation.php:10
+#: search.php:25 search.php:26 template-parts/navigation.php:10
 #: template-parts/navigation.php:12 template-parts/navigation.php:13
 msgid "Search"
 msgstr "Busca"
 
-#: search.php:34
+#: search.php:35
 msgid "See post"
 msgid_plural "See posts"
 msgstr[0] "Veja a postagem"
@@ -228,28 +255,28 @@ msgid "Follow"
 msgstr "Siga"
 
 #: template-parts/post-format-image.php:8
-#: template-parts/post-format-image.php:27
+#: template-parts/post-format-image.php:26
 msgid "Featured image not found."
 msgstr "Imagem destacada não encontrada."
 
 #: template-parts/post-format-link.php:13
 #: template-parts/post-format-link.php:14
-#: template-parts/post-format-link.php:30
-#: template-parts/post-format-link.php:32
+#: template-parts/post-format-link.php:29
+#: template-parts/post-format-link.php:31
 msgid "Browse link"
 msgstr "Acesse o link"
 
 #: template-parts/post-format-quote.php:26
-#: template-parts/post-format-quote.php:55
+#: template-parts/post-format-quote.php:54
 msgid "Source"
 msgstr "Fonte"
 
-#: template-parts/post-format-standard.php:23
-#: template-parts/post-format-standard.php:24
+#: template-parts/post-format-standard.php:26
+#: template-parts/post-format-standard.php:27
 msgid "Read the full post"
 msgstr "Leia a postagem completa"
 
-#: template-parts/post-listing.php:9
+#: template-parts/post-listing.php:11
 msgid "No posts were found for your criteria."
 msgstr "Nenhuma postagem foi encontrada para o seu critério."
 
@@ -264,11 +291,6 @@ msgstr "Postado por"
 #: template-parts/post-meta.php:29
 msgid "on day"
 msgstr "no dia"
-
-#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
-#: template-parts/post-meta.php:34
-msgid "m/d/Y"
-msgstr "j \\d\\e F \\d\\e Y"
 
 #: template-parts/post-meta.php:36
 msgid "Posts on %1$s of %2$s"

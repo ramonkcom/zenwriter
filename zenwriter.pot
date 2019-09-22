@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-09-20T18:24:45+00:00\n"
+"POT-Creation-Date: 2019-09-22T18:43:40+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: zenwriter\n"
@@ -56,6 +56,28 @@ msgstr ""
 
 #: archive.php:43
 msgid "See posts"
+msgstr ""
+
+#: comments.php:9
+msgid "One reply to this post"
+msgid_plural "%d replies to this post"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:11
+msgid "Reply to this post"
+msgstr ""
+
+#: comments.php:18
+msgid "Comments are closed."
+msgstr ""
+
+#: comments.php:36
+msgid "Previous comments"
+msgstr ""
+
+#: comments.php:37
+msgid "Next comments"
 msgstr ""
 
 #: front-page.php:24
@@ -142,23 +164,29 @@ msgstr ""
 msgid "The text that is displayed in the footer."
 msgstr ""
 
+#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
+#: inc/template-functions.php:54
+#: template-parts/post-meta.php:34
+msgid "m/d/Y"
+msgstr ""
+
+#: inc/template-functions.php:117
+msgid "Previous page"
+msgstr ""
+
+#: inc/template-functions.php:142
+msgid "Next page"
+msgstr ""
+
 #: inc/theme.php:24
 msgid "Main Menu"
 msgstr ""
 
-#: inc/theme.php:109
-msgid "Previous page"
-msgstr ""
-
-#: inc/theme.php:134
-msgid "Next page"
-msgstr ""
-
-#: inc/theme.php:168
+#: inc/theme.php:98
 msgid "Social networks"
 msgstr ""
 
-#: inc/theme.php:177
+#: inc/theme.php:107
 msgid "Please enter your %s profile URL."
 msgstr ""
 
@@ -166,34 +194,34 @@ msgstr ""
 msgid "Search results for"
 msgstr ""
 
-#: search.php:11
+#: search.php:12
 msgid "One post matching your search term was found. You can browse it below or search again using the menu."
-msgid_plural "A total of %d posts matching your search term were found. You can browse them below or search again using the menu."
+msgid_plural "A total of %s posts matching your search term were found. You can browse them below or search again using the menu."
 msgstr[0] ""
 msgstr[1] ""
 
-#: search.php:21
+#: search.php:22
 msgid "No posts were found for your search term"
 msgstr ""
 
-#: search.php:21
+#: search.php:22
 msgid "How about trying again?"
 msgstr ""
 
-#: search.php:23
+#: search.php:24
 #: template-parts/navigation.php:11
 msgid "Your search term"
 msgstr ""
 
-#: search.php:24
 #: search.php:25
+#: search.php:26
 #: template-parts/navigation.php:10
 #: template-parts/navigation.php:12
 #: template-parts/navigation.php:13
 msgid "Search"
 msgstr ""
 
-#: search.php:34
+#: search.php:35
 msgid "See post"
 msgid_plural "See posts"
 msgstr[0] ""
@@ -208,28 +236,28 @@ msgid "Follow"
 msgstr ""
 
 #: template-parts/post-format-image.php:8
-#: template-parts/post-format-image.php:27
+#: template-parts/post-format-image.php:26
 msgid "Featured image not found."
 msgstr ""
 
 #: template-parts/post-format-link.php:13
 #: template-parts/post-format-link.php:14
-#: template-parts/post-format-link.php:30
-#: template-parts/post-format-link.php:32
+#: template-parts/post-format-link.php:29
+#: template-parts/post-format-link.php:31
 msgid "Browse link"
 msgstr ""
 
 #: template-parts/post-format-quote.php:26
-#: template-parts/post-format-quote.php:55
+#: template-parts/post-format-quote.php:54
 msgid "Source"
 msgstr ""
 
-#: template-parts/post-format-standard.php:23
-#: template-parts/post-format-standard.php:24
+#: template-parts/post-format-standard.php:26
+#: template-parts/post-format-standard.php:27
 msgid "Read the full post"
 msgstr ""
 
-#: template-parts/post-listing.php:9
+#: template-parts/post-listing.php:11
 msgid "No posts were found for your criteria."
 msgstr ""
 
@@ -244,11 +272,6 @@ msgstr ""
 
 #: template-parts/post-meta.php:29
 msgid "on day"
-msgstr ""
-
-#. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
-#: template-parts/post-meta.php:34
-msgid "m/d/Y"
 msgstr ""
 
 #: template-parts/post-meta.php:36
