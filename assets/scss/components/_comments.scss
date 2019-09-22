@@ -116,6 +116,9 @@
         hr {
           border-top-color: $color-foreground-3;
         }
+        td, th {
+          border-color: $color-foreground-3;
+        }
       }
       
       &__date {

@@ -149,3 +149,23 @@ ol,
 ul {
   padding-left: 1.2em;
 }
+
+/* -------------------------------------------------------------------------- */
+/* Tables
+/* -------------------------------------------------------------------------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+
+  td, th {
+    border: $width-x-small solid $color-background-3;
+    padding: $space-x-small;
+  }
+  
+  thead,
+  tfoot {
+    background: $color-foreground-2;
+    font-family: $font-family-interaction;
+    font-weight: $font-weight-title;
+  }
+}
