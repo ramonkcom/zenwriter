@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-22T18:43:40+00:00\n"
-"PO-Revision-Date: 2019-09-22 15:46-0300\n"
+"POT-Creation-Date: 2019-09-22T19:27:33+00:00\n"
+"PO-Revision-Date: 2019-09-22 16:27-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -180,6 +180,28 @@ msgstr "Texto do rodapé"
 msgid "The text that is displayed in the footer."
 msgstr "O texto que é mostrado no rodapé."
 
+#: inc/customizer.php:205
+msgid "Layout settings"
+msgstr "Configurações de layout"
+
+#: inc/customizer.php:206
+msgid "Layout settings."
+msgstr "Configurações do layout."
+
+#: inc/customizer.php:228
+msgid "Use Zenwriter post formats"
+msgstr "Utilizar formatos de postagens do Zenwriter"
+
+#: inc/customizer.php:229
+msgid ""
+"Zenwriter can display post formats (audio, image, link, quote and video) in "
+"a custom way. This will require you to use the post excerpt to display posts "
+"correctly."
+msgstr ""
+"O Zenwriter pode mostrar formatos de postagens (áudio, imagem, link, citação "
+"e vídeo) de maneira customizada. Você precisará utilizar o resumo da "
+"postagem para mostrar as postagens corretamente."
+
 #. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
 #: inc/template-functions.php:54 template-parts/post-meta.php:34
 msgid "m/d/Y"
@@ -276,7 +298,7 @@ msgstr "Fonte"
 msgid "Read the full post"
 msgstr "Leia a postagem completa"
 
-#: template-parts/post-listing.php:11
+#: template-parts/post-listing.php:18
 msgid "No posts were found for your criteria."
 msgstr "Nenhuma postagem foi encontrada para o seu critério."
 

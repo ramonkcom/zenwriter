@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## Unreleased
 
 ### Added
+- Option to show post formats in Zenwriter way
 - New color to the scheme
 - Tables styling
 - Basic support for comments

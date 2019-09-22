@@ -9,7 +9,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2019-09-22T18:43:40+00:00\n"
+"POT-Creation-Date: 2019-09-22T19:27:33+00:00\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "X-Generator: WP-CLI 2.3.0\n"
 "X-Domain: zenwriter\n"
@@ -164,6 +164,22 @@ msgstr ""
 msgid "The text that is displayed in the footer."
 msgstr ""
 
+#: inc/customizer.php:205
+msgid "Layout settings"
+msgstr ""
+
+#: inc/customizer.php:206
+msgid "Layout settings."
+msgstr ""
+
+#: inc/customizer.php:228
+msgid "Use Zenwriter post formats"
+msgstr ""
+
+#: inc/customizer.php:229
+msgid "Zenwriter can display post formats (audio, image, link, quote and video) in a custom way. This will require you to use the post excerpt to display posts correctly."
+msgstr ""
+
 #. translators: this is a date format, see http://php.net/date in brazil, for instance: 'j \d\e F \d\e Y'
 #: inc/template-functions.php:54
 #: template-parts/post-meta.php:34
@@ -257,7 +273,7 @@ msgstr ""
 msgid "Read the full post"
 msgstr ""
 
-#: template-parts/post-listing.php:11
+#: template-parts/post-listing.php:18
 msgid "No posts were found for your criteria."
 msgstr ""
 

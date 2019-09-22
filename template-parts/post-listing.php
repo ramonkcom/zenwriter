@@ -1,8 +1,15 @@
+<?php $use_zenwriter_formats = get_theme_mod('zenwriter_setting_zenwriter-post-format'); ?>
 <div id="post-listing" class="post-listing">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div id="post-<?php the_ID(); ?>" <?php post_class(is_sticky() ? 'post--brief post--sticky' : 'post--brief'); ?>>
             <div class="grid-container">
-                <?php get_template_part('/template-parts/post-format-' . (get_post_format() ?: 'standard')); ?>
+                <?php
+                if ($use_zenwriter_formats) {
+                    get_template_part('/template-parts/post-format-' . (get_post_format() ?: 'standard')); 
+                } else {
+                    get_template_part('/template-parts/post-format-standard'); 
+                }
+                ?>
             </div><!-- .grid-container -->
         </div><!-- .post -->
     <?php endwhile; else : ?>

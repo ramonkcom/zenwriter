@@ -194,4 +194,40 @@ function zenwriter_customize_register($wp_customize)
             'type' => 'text'
         )
     );
+
+    /* ---------------------------------------------------------------------- */
+    /* Layout
+    /* ---------------------------------------------------------------------- */
+    $wp_customize->add_section(
+        'zenwriter_section_layout',
+        array(
+            'priority' => 120,
+            'title' => __('Layout settings', 'zenwriter'),
+            'description' => __('Layout settings.', 'zenwriter')
+        )
+    );
+
+    function zenwriter_slug_sanitize_checkbox($input){
+        return ((isset($input) && true == $input) ? true : false);
+    }
+
+    $wp_customize->add_setting(
+        'zenwriter_setting_zenwriter-post-format',
+        array(
+            'default' => '',
+            'transport' => 'refresh',
+            'sanitize_callback' => 'zenwriter_slug_sanitize_checkbox'
+        )
+    );
+
+    $wp_customize->add_control(
+        'zenwriter_setting_zenwriter-post-format',
+        array(
+            'section' => 'zenwriter_section_layout',
+            'priority' => 10,
+            'label' => __('Use Zenwriter post formats', 'zenwriter'),
+            'description' => __('Zenwriter can display post formats (audio, image, link, quote and video) in a custom way. This will require you to use the post excerpt to display posts correctly.', 'zenwriter'),
+            'type' => 'checkbox'
+        )
+    );
 };
