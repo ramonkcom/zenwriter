@@ -17,6 +17,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Enso symbol on login page and admin bar
 
 ### Changed
+- Improved HTML styling
 - Improved post listing
 - Better navigation styling
 - Better hover responsiveness

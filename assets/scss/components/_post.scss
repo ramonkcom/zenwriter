@@ -3,7 +3,6 @@
 /* ========================================================================== */
 
 .post {
-  
   &--full {
     padding-top: #{$space-medium * 2};
 
@@ -160,7 +159,22 @@
       margin: #{$font-size-copy * $scale-large} 0;
       padding: #{$font-size-copy * $scale-large * 2} 0;
     }
+
+    .post__quote {
+      footer {
+        &::before {
+          content: none;
+        }
+      }
     
+      p {
+        color: $color-foreground-1;
+        font-size: #{$font-size-copy * $scale-x-large};
+        @include respond-to('small') {
+          font-size: #{$font-size-copy * $scale-x-large * $scale-x-large};
+        }
+      }
+    }
   }
 
   &__media {
