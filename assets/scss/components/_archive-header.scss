@@ -4,7 +4,7 @@
 
 .archive-header {
   background-color: $color-background-max;
-  border-bottom: $width-x-small solid $color-background-3;
+  border-bottom: $width-x-small solid $color-foreground-4;
   padding: #{$space-medium * 2} 0;
 
   @include respond-to('small') {

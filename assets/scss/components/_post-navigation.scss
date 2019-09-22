@@ -4,9 +4,7 @@
 
 .post-navigation {
   background-color: $color-background-2;
-  border: $width-x-small solid $color-background-3;
-  border-left: 0;
-  border-right: 0;
+  border-top: $width-x-small solid $color-background-3;
 
   &__item {
     width: calc(50% - #{$space-small/2});

@@ -231,7 +231,7 @@
   .is-style-outline {
     .wp-block-button__link {
       background-color: transparent;
-      border: $width-small solid $color-background-3;
+      border: $width-small solid $color-foreground-4;
 
       &:active,
       &:hover {

@@ -18,7 +18,7 @@ body {
 }
 hr {
   border-bottom: 0;
-  border-top: $width-x-small dashed $color-background-3;
+  border-top: $width-x-small dashed $color-foreground-4;
   margin: 1em 0;
 }
 html {
@@ -89,7 +89,7 @@ label {
 /* Links
 /* -------------------------------------------------------------------------- */
 a {
-  border-bottom: $width-small solid $color-background-3;
+  border-bottom: $width-small solid $color-foreground-4;
   color: inherit;
   transition-duration: $speed-fast;
 
@@ -158,7 +158,7 @@ table {
   border-collapse: collapse;
 
   td, th {
-    border: $width-x-small solid $color-background-3;
+    border: $width-x-small solid $color-foreground-4;
     padding: $space-x-small;
   }
   

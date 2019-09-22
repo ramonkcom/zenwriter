@@ -4,9 +4,7 @@
 
 .comments {
   background-color: $color-background-3;
-  border: $width-x-small solid $color-background-3;
-  border-left: 0;
-  border-right: 0;
+  border-top: $width-x-small solid $color-background-4;
   padding: #{$space-medium * 2} 0;
 
   @include respond-to('small') {
@@ -62,7 +60,7 @@
     }
     
     .comment {
-      border-top: $width-x-small dashed darken($color-background-2, 10%);
+      border-top: $width-x-small dashed $color-background-4;
       padding: $space-small 0;
 
       &__author,
@@ -95,6 +93,12 @@
 
       &__content {
         @include content;
+
+        a {
+          &:not(:hover) {
+            border-color: $color-background-4;
+          }
+        }
         h1 {
           font-size: 1.5em;
         }
@@ -114,10 +118,10 @@
           font-size: 1em;
         }
         hr {
-          border-top-color: $color-foreground-3;
+          border-top-color: $color-background-4;
         }
         td, th {
-          border-color: $color-foreground-3;
+          border-color: $color-background-4;
         }
       }
       
@@ -140,7 +144,7 @@
       }
       
       > ul {
-        border-left: $width-x-small solid darken($color-background-2, 10%);
+        border-left: $width-x-small solid $color-background-4;
         list-style-type: none;
         margin-top: $space-small;
       }
@@ -151,7 +155,7 @@
         margin-top: .2em;
 
         &:not(:hover) {
-          border-bottom-color: darken($color-background-3, 10%);
+          border-bottom-color: $color-background-4;
         }
       }
     }

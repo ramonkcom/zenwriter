@@ -4,9 +4,7 @@
 
 .pagination {
   background-color: $color-background-2;
-  border: $width-x-small solid $color-background-3;
-  border-left: 0;
-  border-right: 0;
+  border-top: $width-x-small solid $color-foreground-4;
 
   &__item {
     display: none;

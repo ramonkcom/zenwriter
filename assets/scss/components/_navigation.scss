@@ -11,7 +11,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
   &__content {
     background-color: $color-background-max;
-    border-left: $width-x-small solid $color-background-3;
+    border-left: $width-x-small solid $color-foreground-4;
     box-shadow: $shadow-large;
     height: 100vh;
     right: 0;
@@ -56,7 +56,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
   }
 
   &__group {
-    border: $width-x-small solid $color-background-3;
+    border: $width-x-small solid $color-foreground-4;
     border-left: 0;
     border-right: 0;
     margin-top: -$width-x-small;
@@ -116,7 +116,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
         ul {
           background-color: $color-background-max;
-          border-left: $width-x-small solid $color-background-3;
+          border-left: $width-x-small solid $color-background-4;
           box-shadow: $shadow-large;
           display: flex;
           flex-direction: column;
@@ -177,7 +177,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
           &::before,
           &::after {
-            background-color: $color-background-3;
+            background-color: $color-foreground-4;
             content: "";
             display: inline-block;
             height: $width-small;
