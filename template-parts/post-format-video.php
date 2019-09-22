@@ -17,7 +17,6 @@ $url = filter_var($url, FILTER_VALIDATE_URL) ? $url : null;
         <?php get_template_part('/template-parts/post-tags'); ?>
         <?php get_template_part('/template-parts/post-author'); ?>
     </div><!-- .grid-container -->
-    <?php get_template_part('/template-parts/post-navigation'); ?>
 <?php else : ?>
     <div class="post__media post__media--video">
         <?php if ($url) { global $wp_embed; echo $wp_embed->run_shortcode('[embed]' . $url . '[/embed]'); } ?>

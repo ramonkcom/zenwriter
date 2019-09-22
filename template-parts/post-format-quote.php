@@ -32,7 +32,6 @@
         <?php get_template_part('/template-parts/post-tags'); ?>
         <?php get_template_part('/template-parts/post-author'); ?>
     </div><!-- .grid-container -->
-    <?php get_template_part('/template-parts/post-navigation'); ?>
 <?php else : ?>
     <?php get_template_part('/template-parts/post-meta'); ?>
         <div class="post__content">

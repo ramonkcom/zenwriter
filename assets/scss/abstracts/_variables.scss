@@ -31,7 +31,7 @@ $speed-slow:    .9s;
 $speed-x-slow:  1.8s;
 
 /* -------------------------------------------------------------------------- */
-/* Layout and grid
+/* Spaces and forms
 /* -------------------------------------------------------------------------- */
 $scale-x-small: .675;
 $scale-small: .9;
@@ -52,6 +52,11 @@ $width-x-large: 1.6rem;
 
 $grid-width: 76.8rem;
 $grid-gutter: $space-small;
+
+$radius-small: .4rem;
+$radius-medium: .6rem;
+$radius-large: 1.2rem;
+$radius-round: 999rem;
 
 /* -------------------------------------------------------------------------- */
 /* Colors and shadows

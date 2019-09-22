@@ -1,0 +1,176 @@
+/* ========================================================================== */
+/* Comments
+/* ========================================================================== */
+
+.comments {
+  background-color: $color-background-3;
+  border: $width-x-small solid $color-background-3;
+  border-left: 0;
+  border-right: 0;
+  padding: #{$space-medium * 2} 0;
+
+  @include respond-to('small') {
+    padding: #{($space-medium + $space-small) * 2} 0;
+  }
+
+  &__closed {
+    font-family: $font-family-interaction;
+    padding-bottom: $space-small;
+  }
+
+  &__form {
+    font-family: $font-family-interaction;
+    padding-bottom: #{$space-small * 2};
+
+    label {
+      display: block;
+    }
+
+    p {
+      margin-bottom: .4em;
+    }
+
+    .comment-form-comment {
+     line-height: 0; 
+
+      label {
+        line-height: $font-height-copy;
+      }
+    }
+
+    .comment-form-cookies-consent label {
+      display: inline;
+      margin-left: .4em;
+    }
+
+    .comment-notes {
+      font-size: #{$font-size-copy * $scale-small};
+      
+      @include respond-to('small') {
+        font-size: $font-size-copy;
+      }
+    }
+  }
+
+  &__list {
+    font-size: #{$font-size-copy * $scale-small};
+    list-style-type: none;
+    padding: 0;
+  
+    @include respond-to('small') {
+      font-size: $font-size-copy;
+    }
+    
+    .comment {
+      border-top: $width-x-small dashed darken($color-background-2, 10%);
+      padding: $space-small 0;
+
+      &__author,
+      &__meta {
+        font-family: $font-family-interaction;
+      }
+
+      &__author {
+        font-weight: $font-weight-title;
+      }
+
+      &__avatar {
+        float: left;
+        margin: .3em 1em 0 0;
+
+        img {
+          border-radius: 999px;
+          height: 3.6rem;
+          width: auto;
+        }
+        
+        @include respond-to('small') {
+          margin-top: .45em;
+
+          img {
+            height: 3.9rem;
+          }
+        }
+      }
+
+      &__content {
+        @include content;
+        h1 {
+          font-size: 1.5em;
+        }
+        h2 {
+          font-size: 1.4em;
+        }
+        h3 {
+          font-size: 1.3em;
+        }
+        h4 {
+          font-size: 1.2em;
+        }
+        h5 {
+          font-size: 1.1em;
+        }
+        h6 {
+          font-size: 1em;
+        }
+        hr {
+          border-top-color: $color-foreground-3;
+        }
+      }
+      
+      &__date {
+        font-size: #{$font-size-copy * $scale-small * $scale-small};
+        opacity: .75;
+        
+        @include respond-to('large') {
+          font-size: #{$font-size-copy * $scale-small};
+          opacity: .5;
+          
+          &:hover {
+            opacity: 1;
+          }
+        }
+      }
+      
+      &__meta {
+        @include clearfix;
+      }
+      
+      > ul {
+        border-left: $width-x-small solid darken($color-background-2, 10%);
+        list-style-type: none;
+        margin-top: $space-small;
+      }
+
+      .comment-reply-link {
+        display: inline-block;
+        font-family: $font-family-interaction;
+        margin-top: .2em;
+
+        &:not(:hover) {
+          border-bottom-color: darken($color-background-3, 10%);
+        }
+      }
+    }
+  }
+
+  .comment-navigation {
+    .nav-links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      a {
+        @include button-shape;
+    
+        background-color: $color-background-2;
+    
+        &:active,
+        &:hover {
+          background-color: $color-brand-primary;
+          color: $color-foreground-max;
+        }
+      }
+    }
+  }
+}

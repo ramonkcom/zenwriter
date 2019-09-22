@@ -6,15 +6,16 @@
             </h1><!-- .archive__title -->
             <div class="archive-header__description">
                 <?php if (absint($wp_query->found_posts) > 0) : ?>
-                    <?php 
+                    <?php
+                    /* translators: %s: number of posts found */ 
                     printf( 
                         _n(
                             'One post matching your search term was found. You can browse it below or search again using the menu.', 
-                            'A total of %d posts matching your search term were found. You can browse them below or search again using the menu.',
+                            'A total of %s posts matching your search term were found. You can browse them below or search again using the menu.',
                             $wp_query->found_posts,
                             'zenwriter'
                         ),
-                        $wp_query->found_posts
+                        number_format_i18n($wp_query->found_posts)
                     ); 
                     ?>
                 <?php else : ?>
@@ -30,7 +31,7 @@
             <?php if (absint($wp_query->found_posts) > 0) : ?>
                 <a class="button button--large button--important" href="#post-listing">
                     <span class="icon-down"></span>
-                    <?php 
+                    <?php  
                     echo _n(
                         'See post', 
                         'See posts',

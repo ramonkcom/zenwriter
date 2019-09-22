@@ -18,7 +18,6 @@
         <?php get_template_part('/template-parts/post-tags'); ?>
         <?php get_template_part('/template-parts/post-author'); ?>
     </div><!-- .grid-container -->
-    <?php get_template_part('/template-parts/post-navigation'); ?>
 <?php else : ?>
     <div class="post__media post__media--image">
         <?php if ($featured_image_url) : ?>

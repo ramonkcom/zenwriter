@@ -17,6 +17,7 @@ body {
   }
 }
 hr {
+  border-bottom: 0;
   border-top: $width-x-small dashed $color-background-3;
   margin: 1em 0;
 }
@@ -42,19 +43,46 @@ input[type=submit] {
   }
 }
 
-input[type=text] {
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week],
+textarea {
   background-color: $color-background-1;
   border: 0;
-  border-radius: 100px;
+  border-radius: $radius-medium;
   font-family: $font-family-interaction;
   font-size: $font-size-copy;
-  line-height: $font-size-copy;
-  padding: .3em 1.2em;
-
+  line-height: $font-height-copy;
+  width: 100%;
+  
   @include respond-to("small") {
     font-size: #{$font-size-copy * $scale-large};
     line-height: #{$font-height-copy  * $scale-large};
   }
+}
+
+input[type=date],
+input[type=datetime-local],
+input[type=email],
+input[type=month],
+input[type=number],
+input[type=password],
+input[type=text],
+input[type=time],
+input[type=url],
+input[type=week] {
+  padding: .21em 1.2em;
+}
+
+label {
+  font-weight: $font-weight-title;
 }
 
 /* -------------------------------------------------------------------------- */

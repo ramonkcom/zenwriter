@@ -64,6 +64,8 @@ if (!defined('ABSPATH')) {
             .button:hover,
             .button--important,
             .button--important:hover,
+            .comments .comment-navigation .nav-links a:hover,
+            .comments .comment-navigation .nav-links a:active,
             .navigation__toggle:hover,
             .navigation__checkbox:checked ~ .navigation__toggle,
             .post__content .wp-block-button__link:active,

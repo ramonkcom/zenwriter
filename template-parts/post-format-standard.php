@@ -10,7 +10,6 @@
         <?php get_template_part('/template-parts/post-tags'); ?>
         <?php get_template_part('/template-parts/post-author'); ?>
     </div><!-- .grid-container -->
-    <?php get_template_part('/template-parts/post-navigation'); ?>
 <?php else : ?>
     <<?php echo is_front_page() && !is_home() ? 'h3' : 'h2'; ?> class="post__title">
         <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
