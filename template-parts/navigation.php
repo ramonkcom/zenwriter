@@ -6,7 +6,7 @@
     <nav class="navigation__content">
         <?php //$pages = count(get_pages(array('parent' => 0))); print($pages); ?>
         <div class="navigation__group">
-            <form class="navigation__search-form" role="search" method="get" action="http://ramonk.local/">
+            <form class="navigation__search-form" role="search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
                 <label class="screen-reader-text title-medium" for="s"><?php _e('Search', 'zenwriter'); ?>:</label>
                 <input id="s" class="search-field" type="text" name="s" value="<?php echo isset($_REQUEST['s']) ? $_REQUEST['s'] : '' ; ?>" placeholder="<?php _e('Your search term', 'zenwriter'); ?>">
                 <button id="searchsubmit" class="button" type="submit" value="<?php _e('Search', 'zenwriter'); ?>">

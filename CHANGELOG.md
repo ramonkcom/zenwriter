@@ -29,6 +29,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Scroll to top button now disappears when overlapping the footer
 
 ### Fixed
+- Search form
 - Scroll to top button position on mobile
 - Footer now stay sticked to the bottom for any content size
 - Translation issues on user profile
