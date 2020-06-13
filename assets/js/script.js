@@ -42,7 +42,7 @@ var contentFocus = function () {
     let observer = new IntersectionObserver(focus, options);
 
     // list of elements
-    let elements = document.querySelectorAll('.post--brief, .post__content *');
+    let elements = document.querySelectorAll('.post--brief');
 
     // loop through all elements
     // pass each element to observe method

@@ -32,6 +32,9 @@
       font-family: $font-family-title;
       font-weight: $font-weight-title;
       margin-bottom: $space-x-small;
+      overflow: hidden;
+      -ms-word-wrap: break-word;
+      word-wrap: break-word;
     }
   }
 

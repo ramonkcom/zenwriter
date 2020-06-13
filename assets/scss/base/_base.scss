@@ -30,6 +30,8 @@ ul {
 }
 
 blockquote {
+  border-left: solid $width-medium $color-foreground-4;
+  padding-left: $width-x-large;
   position: relative;
 
   &:first-child {
@@ -51,6 +53,7 @@ blockquote {
     z-index: -1;
   }
 
+  cite,
   footer {
     align-items: center;
     display: flex;
@@ -59,6 +62,7 @@ blockquote {
     font-weight: $font-weight-title;
     justify-content: flex-start;
     line-height: 1;
+    margin-top: $font-size-copy;
 
     &::before {
       content: '— ';
@@ -95,10 +99,10 @@ blockquote {
   }
 
   p {
-    color: lighten($color-foreground-1, 60%);
+    color: $color-foreground-3;
     font-style: italic;
     font-size: #{$font-size-copy * $scale-large};
-    line-height: $scale-x-large;
+    line-height: #{$font-height-copy * $scale-large};
     margin-bottom: #{$font-size-copy * $scale-small};
 
     @include respond-to('small') {

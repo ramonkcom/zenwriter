@@ -36,7 +36,8 @@
 /* Mixin for content
 /* -------------------------------------------------------------------------- */
 @mixin content {
-  overflow: auto;
+  overflow: visible;
+  overflow-wrap: break-word;
 
   img {
     height: auto;
@@ -46,6 +47,7 @@
 
   .aligncenter,
   .alignleft,
+  .alignnone,
   .alignright {
     max-width: 100%;
   }
