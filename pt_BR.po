@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zenwriter\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/support/theme/zenwriter\n"
-"POT-Creation-Date: 2019-09-22T19:27:33+00:00\n"
-"PO-Revision-Date: 2020-06-13 18:59-0300\n"
+"POT-Creation-Date: 2020-06-14T14:47:23+00:00\n"
+"PO-Revision-Date: 2020-06-14 11:47-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: pt_BR\n"
@@ -44,6 +44,19 @@ msgstr "https://ramonk.com/"
 msgid "Page not found"
 msgstr "Página não encontrada"
 
+#: 404.php:10
+msgid ""
+"The page you were looking for doesn't exist anymore or never existed.  Check "
+"the typed URL or browse to the <a href=\"%1$s\" title=\"%2$s\">home page</a>."
+msgstr ""
+"A página que você estava procurando não existe mais ou nunca existiu. "
+"Confira a URL digitada ou acesse a <a href=\"%1$s\" title=\"%2$s\">página "
+"inicial</a>."
+
+#: 404.php:16
+msgid "Browse to the home page"
+msgstr "Acessar a página inicial"
+
 #: archive.php:6
 msgid "Posts in category"
 msgstr "Postagens na categoria"
@@ -64,25 +77,25 @@ msgstr "Postado em"
 msgid "See posts"
 msgstr "Veja as postagens"
 
-#: comments.php:9
+#: comments.php:10
 msgid "One reply to this post"
 msgid_plural "%d replies to this post"
 msgstr[0] "Uma resposta a esta postagem"
 msgstr[1] "%d respostas a esta postagem"
 
-#: comments.php:11
+#: comments.php:13
 msgid "Reply to this post"
 msgstr "Responda a esta postagem"
 
-#: comments.php:18
+#: comments.php:15 comments.php:23
 msgid "Comments are closed."
 msgstr "Os comentários estão fechados."
 
-#: comments.php:36
+#: comments.php:41
 msgid "Previous comments"
 msgstr "Comentários anteriores"
 
-#: comments.php:37
+#: comments.php:42
 msgid "Next comments"
 msgstr "Próximos comentários"
 

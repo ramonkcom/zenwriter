@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.2] - 2020-06-14
+
+### Fixed
+- Translations
+
+---
+
 ## [1.2.1] - 2020-06-13
 
 ### Changed
@@ -80,7 +87,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/ramonkcom/zenwriter/compare/v1.2.2...HEAD
+[Unreleased]: https://github.com/ramonkcom/zenwriter/compare/v1.2.3...HEAD
+[1.2.2]: https://github.com/ramonkcom/zenwriter/compare/v1.2.1...1.2.2
 [1.2.1]: https://github.com/ramonkcom/zenwriter/compare/v1.1.0...1.2.1
 [1.1.0]: https://github.com/ramonkcom/zenwriter/compare/v1.0.0...v1.1.0
 [1.0.0]: https://github.com/ramonkcom/zenwriter/releases/tag/v1.0.0
