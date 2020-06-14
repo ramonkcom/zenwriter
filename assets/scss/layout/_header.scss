@@ -35,6 +35,11 @@
   &__logo {
     height: #{($space-medium + $space-small) / 2};
     width: auto;
+
+    img {
+      height: #{($space-medium + $space-small) / 2};
+      width: auto;
+    }
   }
   
   &__brand {
