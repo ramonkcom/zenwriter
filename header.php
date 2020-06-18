@@ -45,6 +45,10 @@ if (!defined('ABSPATH')) {
     <!-- <?php echo $custom_brand_color; ?>; -->
     <?php if ('' != $custom_brand_color) : ?>
         <style type="text/css">
+            ::selection,
+            ::-moz-selection {
+                background: <?php echo $custom_brand_color; ?>;
+            }
             a:active,
             .navigation__pages ul li a:active,
             .pagination__item--active a,

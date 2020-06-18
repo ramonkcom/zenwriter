@@ -9,6 +9,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.3] - Unreleased
 
+### Added
+- Brand coloured highlight
+
 ### Fixed
 - Header logo edge case (img replacement for picture)
 
