@@ -44,7 +44,7 @@ if (!defined('ABSPATH')) {
     <?php wp_head(); ?>
     <!-- <?php echo $custom_brand_color; ?>; -->
     <?php if ('' != $custom_brand_color) : ?>
-        <style type="text/css">
+        <style type="text/css" id="zenwriter-custom">
             ::selection,
             ::-moz-selection {
                 background: <?php echo $custom_brand_color; ?>;
