@@ -2,7 +2,10 @@
 /* BASE
 /* This file contains very basic styles.
 /* ========================================================================== */
-::selection,
+::selection {
+  background: $color-brand-primary;
+}
+
 ::-moz-selection {
     background: $color-brand-primary;
 }
