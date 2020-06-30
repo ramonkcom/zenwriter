@@ -7,13 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-## [1.2.3] - Unreleased
+## [1.2.3] - 2020-06-30
 
 ### Added
 - Brand coloured highlight
 
 ### Fixed
 - Header logo edge case (img replacement for picture)
+- Styling for figure and figcaption
 
 ---
 
