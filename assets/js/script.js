@@ -31,7 +31,7 @@ var contentFocus = function () {
 
     // list of options
     let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let margin = '-' + Math.round(h / 3) + 'px 0px -' + Math.round(h / 3) + 'px 0px';
+    let margin = '-' + (Math.round(h / 3) - 60) + 'px 0px -' + Math.round(h / 3) + 'px 0px';
     let options = {
         root: null,
         threshold: 0,
@@ -42,7 +42,7 @@ var contentFocus = function () {
     let observer = new IntersectionObserver(focus, options);
 
     // list of elements
-    let elements = document.querySelectorAll('.post--brief');
+    let elements = document.querySelectorAll('.post--brief, .post--full .post__content > *');
 
     // loop through all elements
     // pass each element to observe method

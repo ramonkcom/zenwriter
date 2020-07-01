@@ -16,7 +16,7 @@
   z-index: 1000;
   
   &.focus {
-    transition-duration: #{5*$speed-x-slow};
+    transition-duration: $speed-medium;
     transition-timing-function: ease-in;
     opacity: 0;
   }

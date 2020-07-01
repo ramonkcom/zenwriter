@@ -10,6 +10,18 @@
       padding-top: #{($space-medium + $space-small) * 2};
     }
 
+    .post__content > * {
+      filter: grayscale(1);
+      opacity: .5;
+      transition-duration: $speed-medium;
+      
+      &:hover,
+      &.focus {
+        filter: grayscale(0);
+        opacity: 1;
+      }
+    }
+
     .post-author {
       margin-top: $space-medium;
       margin-bottom: #{$space-medium * 2};
@@ -36,7 +48,7 @@
   
   &--brief {
     filter: grayscale(1);
-    opacity: .25;
+    opacity: .5;
     padding: $space-medium 0;
     transition-duration: $speed-medium;
 
