@@ -31,7 +31,7 @@ var contentFocus = function () {
 
     // list of options
     let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let margin = '-' + (Math.round(h / 3) - 60) + 'px 0px -' + Math.round(h / 3) + 'px 0px';
+    let margin = '-' + Math.round(h / 2.25) + 'px 0px -' + Math.round(h / 2.25) + 'px 0px';
     let options = {
         root: null,
         threshold: 0,

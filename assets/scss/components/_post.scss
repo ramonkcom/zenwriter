@@ -13,7 +13,7 @@
     .post__content > * {
       filter: grayscale(1);
       opacity: .5;
-      transition-duration: $speed-medium;
+      transition-duration: $speed-x-slow;
       
       &:hover,
       &.focus {
