@@ -40,6 +40,7 @@ blockquote {
   border-left: solid $width-medium $color-foreground-4;
   padding-left: $width-x-large;
   position: relative;
+  text-shadow: 0.05em 0.05em 0.05em $color-background-1;
 
   &:first-child {
     margin-top: 0;
@@ -50,13 +51,14 @@ blockquote {
   }
 
   &::before {
-    content: '”';
+    //content: '”';
+    content: '“';
+    color: $color-brand-primary;
     font-size: 6em;
-    right: -.1em;
+    left: -.525em;
     line-height: 1;
-    opacity: .1;
     position: absolute;
-    top: -.1em;
+    top: -.1125em;
     z-index: -1;
   }
 

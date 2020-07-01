@@ -87,6 +87,7 @@ if (!defined('ABSPATH')) {
             .post__content .is-style-outline .wp-block-button__link:hover { 
                 background-color: transparent;
             }
+            blockquote::before,
             .footer__zenwriter:hover,
             .footer__zenwriter:active {
                 color: <?php echo $custom_brand_color; ?>;
