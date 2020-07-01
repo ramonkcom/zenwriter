@@ -235,10 +235,22 @@
 
     .wp-block-image {
       margin-bottom: #{$font-size-copy * $scale-x-large};
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       figcaption {
         font-size: #{$font-size-copy * $scale-x-small};
         margin-top: 0;
+      }
+
+      @include respond-to("small") {
+        margin-bottom: #{$scale-large * $scale-x-large * $font-size-copy};
+
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
     }
 
