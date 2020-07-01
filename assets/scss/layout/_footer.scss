@@ -25,15 +25,16 @@
 
   &__copy,
   &__zenwriter {
-      display: block;
-      
-      @include respond-to('small') {
-        padding: 0 #{$space-small / 2};
-      }
+    display: block;
+    
+    @include respond-to('small') {
+      padding: 0 #{$space-small / 2};
     }
+  }
     
   &__copy {
     line-height: 1;
+    overflow-wrap: break-word;
     
     @include respond-to('small') {
       width: 88%;
