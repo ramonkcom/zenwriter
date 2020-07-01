@@ -26,6 +26,14 @@ ul {
   &:last-child {
     margin-bottom: 0;
   }
+
+  @include respond-to("small") {
+    margin-bottom: #{$scale-large * $scale-x-large * $font-size-copy};
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 blockquote {
