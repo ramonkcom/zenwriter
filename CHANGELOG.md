@@ -7,6 +7,19 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [1.2.4] - Unreleased
+
+### Changed
+- Font-size
+- Content elements spacing
+- Content focus strategy
+
+### Fixed
+- Copy text styling for long strings
+- Header logo display styling
+
+---
+
 ## [1.2.3] - 2020-06-30
 
 ### Added
