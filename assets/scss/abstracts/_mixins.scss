@@ -40,16 +40,6 @@
   overflow-wrap: break-word;
 
   figure {
-    figcaption {
-      font-size: #{$font-size-copy * $scale-x-small};
-      margin-bottom: $font-size-copy;
-      margin-top: 0;
-
-      @include respond-to('small') {
-        margin-bottom: #{$font-size-copy * $scale-large};
-      }
-    }
-
     img {
       margin-bottom: 0;
     }

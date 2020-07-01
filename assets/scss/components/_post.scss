@@ -139,8 +139,6 @@
     }
 
     .gallery {
-      margin-bottom: $font-size-copy !important;
-
       .gallery-caption {
         font-size: #{$font-size-copy * $scale-x-small};
         line-height: $scale-large;
@@ -220,6 +218,15 @@
             margin: 0;
           }
         }
+      }
+    }
+
+    .wp-block-image {
+      margin-bottom: #{$font-size-copy * $scale-x-large};
+
+      figcaption {
+        font-size: #{$font-size-copy * $scale-x-small};
+        margin-top: 0;
       }
     }
 

@@ -21,18 +21,10 @@ ol,
 p,
 pre,
 ul {
-  margin-bottom: $font-size-copy;
+  margin-bottom: #{$scale-x-large * $font-size-copy};
   
   &:last-child {
     margin-bottom: 0;
-  }
-
-  @include respond-to('small') {
-    margin-bottom: #{$font-size-copy * $scale-large};
-
-    &:last-child {
-      margin-bottom: 0;
-    }
   }
 }
 
