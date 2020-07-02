@@ -176,7 +176,7 @@ input[type=url],
 input[type=week],
 textarea {
   background-color: $color-background-1;
-  border: 0;
+  border: 2px solid $color-background-2;
   border-radius: $radius-medium;
   font-family: $font-family-interaction;
   font-size: $font-size-copy;
