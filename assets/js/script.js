@@ -19,6 +19,7 @@ document.querySelector('.navigation__checkbox').addEventListener('change', funct
 /* Focus
 /* -------------------------------------------------------------------------- */
 var contentFocus = function () {
+    // observer callback
     function focus(elements) {
         elements.forEach(element => {
             if (element.isIntersecting) {
@@ -29,27 +30,78 @@ var contentFocus = function () {
         });
     }
 
-    // list of options
-    let h = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
-    let margin = '-' + Math.round(h / 2.25) + 'px 0px -' + Math.round(h / 2.25) + 'px 0px';
-    let options = {
-        root: null,
-        threshold: 0,
-        rootMargin: margin
-    };
+    // scroll listener control variables
+    var observer = null;
+    var observerMargin = 'none';
+    var observerFired = false;
 
-    // instantiate a new Intersection Observer
-    let observer = new IntersectionObserver(focus, options);
+    //scrolling control
+    window.addEventListener('scroll', function(e){
+        // variables
+        let bodyHeight = Math.max( 
+            document.body.scrollHeight, 
+            document.body.offsetHeight, 
+            document.documentElement.clientHeight, 
+            document.documentElement.scrollHeight, 
+            document.documentElement.offsetHeight
+        );
+        let windowHeight = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+        let regularMargin = Math.round(windowHeight / 2.7);
+        let smallMargin = Math.round(windowHeight / 4);
+        let observerRootMarginTop =     '-' + smallMargin   + 'px 0px -' + regularMargin + 'px 0px';
+        let observerRootMarginMiddle =  '-' + regularMargin + 'px 0px -' + regularMargin + 'px 0px';
+        let observerRootMarginBottom =  '-' + regularMargin + 'px 0px -' + smallMargin   + 'px 0px';
 
-    // list of elements
-    let elements = document.querySelectorAll('.post--brief, .post--full .post__content > *');
+        if (window.pageYOffset < regularMargin) {
+            if (observerMargin != 'top') {
+                if (observer) observer.disconnect();
+                // instantiate a new IntersectionObserver
+                observer = new IntersectionObserver(focus, {root: null, threshold: 0, rootMargin: observerRootMarginTop});
+                observerMargin = 'top';
+                observerFired = false;
+                // console.log(observer);
+            }
+            // console.log('edging TOP');
+        } else if (window.pageYOffset > bodyHeight - windowHeight - regularMargin) {
+            if (observerMargin != 'bottom') {
+                if (observer) observer.disconnect();
+                // instantiate a new IntersectionObserver
+                observer = new IntersectionObserver(focus, {root: null, threshold: 0, rootMargin: observerRootMarginBottom});
+                observerMargin = 'bottom';
+                observerFired = false;
+                // console.log(observer);
+            }
+            // console.log('edging BOTTOM');
+        } else {
+            if (observerMargin != 'middle') {
+                if (observer) observer.disconnect();
+                // instantiate a new IntersectionObserver
+                observer = new IntersectionObserver(focus, {root: null, threshold: 0, rootMargin: observerRootMarginMiddle});
+                observerMargin = 'middle';
+                observerFired = false;
+                // console.log('window.pageYOffset:' + window.pageYOffset);
+                // console.log(observer);
+            } 
+            // console.log('not edging')
+        }
 
-    // loop through all elements
-    // pass each element to observe method
-    // ES2015 for-of loop can traverse through DOM Elements
-    for (let element of elements) {
-        observer.observe(element);
-    }
+        if (!observerFired) {
+            // list of elements to observe
+            let elements = document.querySelectorAll('.post--brief, .post--full .post__content > *');
+
+            // loop through all elements
+            for (let element of elements) {
+                // pass each element to observe method
+                observer.observe(element);
+            }
+
+            //flag that observe() has been called
+            observerFired = true;
+        }
+    });
+
+    //trigger the scroll event listener
+    window.dispatchEvent(new CustomEvent('scroll'));
 }
 
 var interactionFocus = function () {
@@ -84,4 +136,3 @@ window.onload = function() {
     interactionFocus();
     contentFocus();
 }
-
