@@ -45,7 +45,9 @@ if (!defined('ABSPATH')) {
     <!-- <?php echo $custom_brand_color; ?>; -->
     <?php if ('' != $custom_brand_color) : ?>
         <style type="text/css" id="zenwriter-custom">
-            ::selection,
+            ::selection {
+                background: <?php echo $custom_brand_color; ?>;
+            }
             ::-moz-selection {
                 background: <?php echo $custom_brand_color; ?>;
             }
