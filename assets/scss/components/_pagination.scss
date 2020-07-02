@@ -21,6 +21,14 @@
       }
     }
 
+    &--next {
+      margin-right: -.25em;
+    }
+
+    &--previous {
+      margin-left: -.25em;
+    }
+
     @include respond-to('small') {
       display: inline-block;
     }

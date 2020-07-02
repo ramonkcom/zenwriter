@@ -84,6 +84,7 @@
 
     .post__read-more {
       margin-top: #{$font-size-copy * $scale-small};
+      margin-left: -.25em;
       
       @include respond-to('small') {
         margin-top: $font-size-copy;
