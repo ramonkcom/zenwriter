@@ -237,6 +237,7 @@ $toggle-width: ($space-medium + $space-small) / 2;
 
   &__toggle {
     background-color: $color-background-2;
+    border: solid 2px $color-background-3;
     border-radius: 100px;
     color: $color-foreground-3;
     cursor: pointer;

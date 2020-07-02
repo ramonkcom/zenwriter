@@ -131,7 +131,7 @@
 /* -------------------------------------------------------------------------- */
 @mixin button-shape {
   align-items: center;
-  border: 0;
+  border: solid 2px $color-background-3;
   border-radius: 999px;
   color: $color-foreground-3;
   cursor: pointer;
@@ -150,6 +150,10 @@
   &:hover,
   &:active {
     text-decoration: none;
+  }
+  
+  &:hover {
+    border: solid 2px $color-background-3;
   }
 
   [class^="icon-"]:before,
