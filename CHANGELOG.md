@@ -5,19 +5,32 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
 ---
 
-## [1.2.4] - Unreleased
+## [Unreleased] - Unreleased
+
+---
+
+## [1.2.4] - 2020-07-02
 
 ### Changed
-- Font-size
+- Base font-size
 - Content elements spacing
 - Content focus strategy
 - Blockquote styling
+- Anchor border color for better contrast
+- Added border to buttons for better contrast
+- Added border to form fields for better contrast
+- Social icons positioning and spacing
+- Post permalink and page navigation buttons positioning
 
 ### Fixed
 - Copy text styling for long strings
 - Header logo display styling
+- Focus not working on edge cases
+- Post tags spacing when HTML is minified
+- Selection custom color
 
 ---
 
@@ -112,7 +125,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-[Unreleased]: https://github.com/ramonkcom/zenwriter/compare/v1.2.3...HEAD
+[Unreleased]: https://github.com/ramonkcom/zenwriter/compare/v1.2.4...HEAD
+[1.2.4]: https://github.com/ramonkcom/zenwriter/compare/v1.2.3...1.2.4
 [1.2.3]: https://github.com/ramonkcom/zenwriter/compare/v1.2.2...1.2.3
 [1.2.2]: https://github.com/ramonkcom/zenwriter/compare/v1.2.1...1.2.2
 [1.2.1]: https://github.com/ramonkcom/zenwriter/compare/v1.1.0...1.2.1

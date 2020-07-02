@@ -1,5 +1,5 @@
 <?php
-define('ZENWRITER_VERSION', '1.2.3');
+define('ZENWRITER_VERSION', '1.2.4');
 load_theme_textdomain('zenwriter');
 
 require_once get_stylesheet_directory() . '/inc/util.php';
