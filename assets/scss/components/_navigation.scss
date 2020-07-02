@@ -221,9 +221,17 @@ $toggle-width: ($space-medium + $space-small) / 2;
     }
   }
 
-  &__social-links {
+  &__social {
     .button--icon {
-      margin: .36rem 0;
+      font-size: 1.5rem;
+      margin: .25rem .5rem;
+      margin-left: 0;
+    }
+
+    &__links {
+      align-content: space-between;
+      display: flex;
+      flex-wrap: wrap;
     }
 
     .title-medium {

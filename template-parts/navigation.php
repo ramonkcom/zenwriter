@@ -50,19 +50,21 @@
         ?>
         <?php if ($hasSocialLinks) : ?>
             <div class="navigation__group">
-                <div class="navigation__social-links">
+                <div class="navigation__social">
                     <h2 class="title-medium"><?php _e('Follow', 'zenwriter'); ?>:</h2><!-- .title-medium -->
-                    <?php foreach (social_links() as $name => $key) : ?>
-                        <?php 
-                        $url = trim(get_theme_mod('zenwriter_setting_' . $key . '-url'));
-                        if ($url) :
-                        ?>
-                        <a class="button button--icon" href="<?php echo $url ?>" title="<?php echo $name ?>" target="_blank" rel="nofollow">
-                            <span class="icon-<?php echo $key; ?>"></span>
-                        </a><!-- .button -->
-                        <?php endif; ?>
-                    <?php endforeach; ?>
-                </div><!-- .navigation__social-links -->
+                    <div class="navigation__social__links">
+                        <?php foreach (social_links() as $name => $key) : ?>
+                            <?php 
+                                $url = trim(get_theme_mod('zenwriter_setting_' . $key . '-url'));
+                                if ($url) :
+                            ?>
+                                <a class="button button--icon" href="<?php echo $url ?>" title="<?php echo $name ?>" target="_blank" rel="nofollow">
+                                    <span class="icon-<?php echo $key; ?>"></span>
+                                </a><!-- .button -->
+                            <?php endif; ?>
+                        <?php endforeach; ?>
+                    </div><!-- .navigation__social__links -->
+                </div><!-- .navigation__social -->
             </div><!-- .navigation__group -->
         <?php endif ?>
         <?php 
